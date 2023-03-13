@@ -10,7 +10,8 @@
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
     "lint": "next lint",
-    "build-types": "tsc --noEmit --pretty"
+    "build-types": "tsc --noEmit --pretty",
+    "format": "prettier --write \"src/**/*.tsx\" \"src/**/*.ts\""
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",

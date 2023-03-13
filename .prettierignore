@@ -1,0 +1,11 @@
+!./src/**/*.ts
+!./src/*.ts
+node_modules/
+.next/
+.github/
+dist/
+build/
+.cache/
+.husky/
+public/
+_templates/
