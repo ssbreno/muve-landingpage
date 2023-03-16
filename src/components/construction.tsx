@@ -13,14 +13,20 @@ export default function Construction(): JSX.Element {
         alt="hero"
         className="absolute w-full left-24 bottom-24 animate-blob2"
       />
-      <div className="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
+
+      <div className="relative inset-x-0 right-70 w-60">
+        <video controls autoPlay> 
+        <source src="assets/videos/muveloading.mp4" type="video/mp4"/>
+        </video>        
+      </div>
+      <div className="relative justify-center items-center z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
         <div className="text-center space-y-10">
-          <h3 className="font-light text-xl uppercase tracking-wider">Muve</h3>
           <h1 className="text-5xl lg:text-7xl font-extrabold">Em construção</h1>
-          <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
+          <p className="text-xl lg:text-xl tracking-wide mx-8 lg:max-w-xl lg:mx-auto">
             Estamos construindo nossa página para melhores atendê-los, e
             continuar entregando qualidade em nossos serviços.
           </p>
+          
         </div>
       </div>
       <div className="absolute bottom-5">
