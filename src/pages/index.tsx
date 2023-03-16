@@ -1,11 +1,13 @@
 import React from 'react';
 
-import Construction from '../components/construction';
+import Analytics from '../components/analytics';
+import ComingSoon from '../components/coming-soon';
 
 const App = () => {
   return (
     <>
-      <Construction />
+      <ComingSoon />
+      <Analytics />
     </>
   );
 };

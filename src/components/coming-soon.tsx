@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Construction(): JSX.Element {
+export default function ComingSoon(): JSX.Element {
   return (
     <div className="relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
       <img
