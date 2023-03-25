@@ -1,47 +1,43 @@
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
   theme: {
-    backgroundImage: {
-      hero: "url('https://html.creativegigstf.com/vCamp/vCamp/images/assets/bg_01.png')",
+    fontSize: {
+      xs: '0.55rem',
+      sm: '0.65rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '8rem',
     },
     extend: {
+      fontFamily: {
+        'poppins' : ['Poppins'],
+      },
+      colors: {
+        primary: '#0550FC',
+        secondary: '#00FF96',
+        tertiary: '#212635',
+        border: '#1a2e35',
+        background: '#cecece',
+      },
       animation: {
-        blob: 'blob 7s infinite',
-        blob2: 'blob2 10s infinite',
+        vote: 'vote 1s ease-in-out',
       },
       keyframes: {
-        blob: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
-            filter: 'blur(2px)',
+        vote: {
+          '0%, 100%': {
+            transform: 'rotate(0deg)',
           },
-          '33%': {
-            transform: 'translate(30px, -50px) scale(1.1)',
-            filter: 'blur(0px)',
+          '25%': {
+            transform: 'rotate(-30deg)',
           },
-          '66%': {
-            transform: 'translate(-20px, 20px) scale(0.9)',
-            filter: 'blur(2px)',
-          },
-          '100%': {
-            transform: 'tranlate(0px, 0px) scale(1)',
-            filter: 'blur(1px)',
-          },
-        },
-        blob2: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
-            filter: 'blur(2px)',
-          },
-          '50%': {
-            transform: 'translate(20px, -20px) scale(1.1)',
-            filter: 'blur(0px)',
-          },
-          '100%': {
-            transform: 'tranlate(0px, 0px) scale(1)',
-            filter: 'blur(1px)',
+          '75%': {
+            transform: 'rotate(30deg)',
           },
         },
       },
