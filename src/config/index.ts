@@ -5,7 +5,7 @@ export const config = {
     'O delivery de Goiânia para Goiânia!',
   logo: '/assets/images/logo.svg',
   titleNotFound: 'Muve | Página não encontrada',
-  navigation: [
+  nameNavigation: [
     {
       name: 'Inicio',
       href: '#',

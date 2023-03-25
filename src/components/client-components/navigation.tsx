@@ -1,17 +1,17 @@
-'use client'
-import Link from 'next/link'
-import { useRef } from 'react'
+'use client';
+import { Link } from 'react-scroll';
+import { useRef } from 'react';
 import { config } from '../../config';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export function Navigation() {
-  const navigation = useRef<HTMLDivElement>(null)
+  const navigation = useRef<HTMLDivElement>(null);
 
-  const { navigation, mainTitle, logo } = config;
+  const { nameNavigation } = config;
 
   function handleMenu() {
     if (navigation?.current) {
-      navigation.current.classList.toggle('translate-x-full')
+      navigation.current.classList.toggle('translate-x-full');
     }
   }
 
@@ -19,31 +19,31 @@ export function Navigation() {
     <div className="relative">
       <nav className="hidden lg:block">
         <div className="flex gap-7 items-center">
-            {navigation.map((items: any) => (
-              <Link
-                spy={true}
-                active="active"
-                smooth={true}
-                duration={1000}
-                to={items.href}
-                key={items.name}
-                className="mr-14 after:bg text-base hover:from-pink-500 hover:to-yellow-500"
-              >
-                {items.name}
-              </Link>
-            ))}
+          {nameNavigation.map((items: any) => (
+            <Link
+              spy={true}
+              active="active"
+              smooth={true}
+              duration={1000}
+              to={items.href}
+              key={items.name}
+              className="text-xl font-medium hover:from-pink-500 hover:to-yellow-500 mr-20"
+            >
+              {items.name}
+            </Link>
+          ))}
           <button
             type="submit"
             className="font-bold text-xs lg:text-sm bg-gradient-to-r  mx-auto 
-            from-secondary to-primary  py-2 px-12 rounded-full ml-20">
+            from-muve-principal to-muve-verde  py-2 px-12 rounded-full mr-20"
+          >
             Entrar
           </button>
-          </div>
+        </div>
       </nav>
 
-
       <button
-        className="flex lg:hidden items-center justify-center p-1 border border-black"
+        className="flex lg:hidden items-center justify-center p-1 border border-black mr-10"
         onClick={handleMenu}
         role="button"
         title="Botão do menu"
@@ -57,7 +57,7 @@ export function Navigation() {
       >
         <button
           onClick={handleMenu}
-          className="p-1 items-center justify-center border border-black flex ml-auto mb-5"
+          className="p-1 items-center justify-center border border-black flex ml-auto mb-10 mr-10"
           role="button"
           title="Botão de fechar o menu"
           aria-label="Botão de fechar o menu"
@@ -65,27 +65,27 @@ export function Navigation() {
           <AiOutlineClose size={20} color="#000" />
         </button>
         <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-            <a
-              href="#"
-              className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+          {nameNavigation.map((item) => (
+            <Link
+              spy={true}
+              active="active"
+              smooth={true}
+              duration={1000}
+              key={item.name}
+              to={item.href}
+              className="flex flex-col gap-4 items-center text-2xl font-medium"
             >
-              Entrar
-            </a>
-          </div>
+              {item.name}
+            </Link>
+          ))}
+        </div>
+        <a
+          href="#"
+          className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-200 hover:bg-gray-100`}
+        >
+          Entrar
+        </a>
       </nav>
     </div>
-  )
+  );
+}

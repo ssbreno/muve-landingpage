@@ -1,6 +1,5 @@
 import { AnimatedSection } from '../components/animatedSection';
-import MainBg from '../components/main-bg';
-import Content from '../components/main-content';
+import { Hero } from '../components/hero';
 import { AppConfig } from '../utils/app-config';
 
 const { site_name, description } = AppConfig;
@@ -29,8 +28,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <MainBg />
-      <Content />
+      <Hero />
       <AnimatedSection />
     </>
   );
