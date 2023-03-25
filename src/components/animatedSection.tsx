@@ -8,14 +8,13 @@ export function AnimatedSection() {
           Integrações
         </p>
         <Image
-                className="flex lg:h-full items-center overflow-hidden ml-5"
-                src="/assets/images/integration.svg"
-                alt=""
-                width={40}
-                height={40}
-                quality={100}
-              />
-
+          className="flex lg:h-full items-center overflow-hidden ml-5"
+          src="/assets/images/integration.svg"
+          alt=""
+          width={40}
+          height={40}
+          quality={100}
+        />
       </div>
       <div className="flex items-center overflow-hidden mt-25">
         <div className="marquee-container py-10  flex items-center flex-nowrap overflow-x-hidden">
