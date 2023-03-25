@@ -1,3 +1,4 @@
+import { AnimatedSection } from '../components/animatedSection';
 import MainBg from '../components/main-bg';
 import Content from '../components/main-content';
 import { AppConfig } from '../utils/app-config';
@@ -30,6 +31,7 @@ export default function Page() {
     <>
       <MainBg />
       <Content />
+      <AnimatedSection />
     </>
   );
 }

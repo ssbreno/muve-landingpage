@@ -12,7 +12,7 @@ const Header = () => {
     <Popover>
       <div
         className="h-4 w-screen mb-2 text-xs md:px-28  flex py-8 sm:py-10 px-10 
-      sm:px-20 sm:justify-between text-gray-50 font-semibold bg-center font-poppins items-center mt-10"
+      sm:px-20 sm:justify-between text-gray-50 font-semibold bg-center font-poppins items-center mt-7"
       >
         <nav className="z-20 flex max-sm:hidden sm:gap-3 sm:mx-0 mx-auto sm:mr-10">
           <div className="flex gap-2 justify-center relative">
@@ -25,7 +25,7 @@ const Header = () => {
                 quality={100}
               />
           </div>
-          <div className="flex relative mr-8 ml-20 flex-row lg:text-xs xl:text-sm hidden lg:block">
+          <div className="flex relative mr-8 ml-20 flex-row lg:text-xs xl:text-sm hidden lg:block text-gray-50">
             {navigation.map((items: any) => (
               <Link
                 spy={true}
@@ -34,20 +34,20 @@ const Header = () => {
                 duration={1000}
                 to={items.href}
                 key={items.name}
-                className="text-gray-50 mr-14 after:bg text-base"
+                className="mr-14 after:bg text-base hover:from-pink-500 hover:to-yellow-500"
               >
                 {items.name}
               </Link>
             ))}
+          <button
+            type="submit"
+            className="font-bold text-xs lg:text-sm bg-gradient-to-r  mx-auto 
+            from-secondary to-primary  py-2 px-12 rounded-full ml-20">
+            Entrar
+          </button>
           </div>
         </nav>
         <div className="md:flex flex gap-10 sm:mx-0 mx-auto  md:items-center md:gap-4 z-10 ml-20 ">
-          <button
-            type="submit"
-            className="font-bold text-xs lg:text-sm bg-gradient-to-r  mx-auto from-secondary to-primary  py-2 px-12 rounded-full"
-          >
-            Entrar
-          </button>
           <div className="-mr-2 flex items-center md:hidden">
             <Popover.Button
               className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
@@ -104,7 +104,7 @@ const Header = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100"
                 >
                   {item.name}
                 </Link>
