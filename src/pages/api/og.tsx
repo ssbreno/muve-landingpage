@@ -7,7 +7,7 @@ export const config = {
 
 export default async function handler() {
   const url = checkEnvUrl();
-  const coverBg = `${url}static/images/my-picture.jpg`;
+  const coverBg = `${url}assets/images/logo.svg`;
 
   return new ImageResponse(
     (
@@ -19,12 +19,12 @@ export default async function handler() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'white',
+          backgroundColor: 'blue',
           fontFamily: 'Bebas Neue',
         }}
       >
-        <div tw="flex items-center bg-white w-full h-full p-10 bg-black">
-          <div tw="flex items-center justify-center w-[150px] h-[150px] border-[3px] border-[#c383fb] rounded-full ">
+        <div tw="flex items-center justify-center w-full h-full p-10 bg-[#212635]">
+          <div tw="flex items-center justify-center  w-[150px] h-[150px] border-[3px] border-[#008B8B]">
             <img
               src={coverBg}
               alt=""
@@ -36,10 +36,6 @@ export default async function handler() {
                 borderRadius: '9999px',
               }}
             />
-          </div>
-          <div tw="ml-10 flex flex-col my-auto">
-            <h1 tw="text-6xl mb-2 text-[#c383fb] font-bold">Lucas Vieira</h1>
-            <p tw="text-3xl text-white">Fullstack Developer 👨‍💻</p>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ export const metadata = {
     images: `https://muve.delivery/api/og`,
     title: site_name,
     description: description,
-    creator: '@firemagic',
+    creator: '@muve.go',
     site: 'https://muve.delivery',
   },
 };

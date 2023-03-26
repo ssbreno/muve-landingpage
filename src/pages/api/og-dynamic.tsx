@@ -21,7 +21,7 @@ export default async function handler(req: NextRequest) {
     : 'Descrição default';
 
   const hostUrl = checkEnvUrl();
-  const coverBg = `${hostUrl}static/images/my-picture.jpg`;
+  const coverBg = `${hostUrl}assets/images/logo.svg`;
 
   return new ImageResponse(
     (
@@ -37,8 +37,8 @@ export default async function handler(req: NextRequest) {
           fontFamily: 'Bebas Neue',
         }}
       >
-        <div tw="flex items-center bg-white w-full h-full p-6 bg-black">
-          <div tw="flex items-center justify-center w-[150px] h-[150px] border-[3px] border-[#c383fb] rounded-full ">
+        <div tw="flex items-center bg-white w-full h-full p-10 bg-[#212635]">
+          <div tw="flex items-center justify-center w-[150px] h-[150px] border-[3px] border-[#00FFFF] rounded-full ">
             <img
               src={coverBg}
               alt=""
@@ -52,7 +52,7 @@ export default async function handler(req: NextRequest) {
             />
           </div>
           <div tw="ml-10 flex flex-col my-auto">
-            <h1 tw="text-4xl mb-2 text-[#c383fb] font-bold">{title}</h1>
+            <h1 tw="text-4xl mb-2 text-[#00FFFF] font-bold">{title}</h1>
             <p tw="text-2xl text-white">{description}</p>
           </div>
         </div>
