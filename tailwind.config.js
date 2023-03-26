@@ -17,11 +17,19 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins' : ['Poppins'],
+        'roboto' : ['Roboto', 'sans-serif'],
+        'machina': ['PP Neue Machina', 'sans-serif'],
+      },
+      backgroundImage: {
+        'vetor-one': "url('/assets/images/background.svg')",
+        'vetor-city': "url('/assets/images/vector-city.svg')",
       },
       colors: {
         'muve-principal': '#0550FC',
         'muve-verde': '#00FF96',
         'muve-bluedark': '#212635',
+        'bg-gradient-white': '#FFFFFF',
+        'bg-gradient-blue': '#DCE0FF',
         border: '#1a2e35',
         background: '#cecece',
       },

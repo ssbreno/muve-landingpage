@@ -1,23 +1,11 @@
 'use client';
 
-import {
-  FaNodeJs,
-  FaReact,
-  FaWhatsapp,
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-} from 'react-icons/fa';
-import { SiJavascript } from 'react-icons/si';
+import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const logos = {
-  node: FaNodeJs,
-  react: FaReact,
-  js: SiJavascript,
   whatsapp: FaWhatsapp,
   instagram: FaInstagram,
   linkedin: FaLinkedin,
-  github: FaGithub,
 };
 
 type LogoBoxProps = {

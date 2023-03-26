@@ -7,7 +7,7 @@ const Footer = () => {
         <ul className="flex items-center gap-6 text-white text-sm">
           <li>
             <a
-              href="https://www.instagram.com/muvego/"
+              href="https://www.instagram.com/Muve.go/"
               target="_blank"
               rel="noreferrer"
               aria-label="Link para o meu Instagram"

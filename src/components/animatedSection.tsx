@@ -3,9 +3,9 @@ import Image from 'next/image';
 export function AnimatedSection() {
   return (
     <>
-      <div className="flex items-center overflow-hidden justify-center mt-20">
+      <div className="flex items-center overflow-hidden justify-center mt-10 font-machina">
         <p className="flex items-center overflow-hidden text-3xl text-muve-principal">
-          Integrações
+          <b>Integrações</b>
         </p>
         <Image
           className="flex lg:h-full items-center overflow-hidden ml-5"

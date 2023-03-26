@@ -16,7 +16,7 @@ export function Navigation() {
   }
 
   return (
-    <div className="relative">
+    <div className="relative font-machina">
       <nav className="hidden lg:block">
         <div className="flex gap-7 items-center">
           {nameNavigation.map((items: any) => (
@@ -27,17 +27,17 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-xl font-medium hover:from-pink-500 hover:to-yellow-500 mr-20"
+              className="text-base font-medium mr-20 "
             >
-              {items.name}
+              <b>{items.name}</b>
             </Link>
           ))}
           <button
             type="submit"
             className="font-bold text-xs lg:text-sm bg-gradient-to-r  mx-auto 
-            from-muve-principal to-muve-verde  py-2 px-12 rounded-full mr-20"
+            from-muve-principal to-muve-verde py-2 px-12 rounded-full mr-20 text-white-700"
           >
-            Entrar
+            ENTRAR
           </button>
         </div>
       </nav>

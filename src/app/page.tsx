@@ -1,5 +1,11 @@
 import { AnimatedSection } from '../components/animatedSection';
 import { Hero } from '../components/hero';
+import BlueSection from '../components/heroBlueSection';
+import Company from '../components/heroCompany';
+import CompanySecond from '../components/heroCompanySecond';
+import DeliveryManSection from '../components/heroDeliveryman';
+import DeliverySecond from '../components/heroDeliverySecond';
+import SecondblueSection from '../components/heroSecondBlue';
 import { AppConfig } from '../utils/app-config';
 
 const { site_name, description } = AppConfig;
@@ -30,6 +36,12 @@ export default function Page() {
     <>
       <Hero />
       <AnimatedSection />
+      <BlueSection />
+      <DeliveryManSection />
+      <DeliverySecond />
+      <Company />
+      <CompanySecond />
+      <SecondblueSection />
     </>
   );
 }
