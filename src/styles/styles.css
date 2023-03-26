@@ -33,6 +33,11 @@
     }
   }
 
+.rectangle{
+    @apply mr-5;
+    clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
+}
+
 .marquee {
     flex: 0 0 auto;
     min-width: 100%;
