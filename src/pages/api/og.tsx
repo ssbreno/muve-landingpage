@@ -7,7 +7,7 @@ export const config = {
 
 export default async function handler() {
   const url = checkEnvUrl();
-  const coverBg = `${url}assets/images/logo.svg`;
+  const coverBg = `${url}static/images/logo.svg`;
 
   return new ImageResponse(
     (
