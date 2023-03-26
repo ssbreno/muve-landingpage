@@ -1,6 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js"
+  ],
   theme: {
     fontSize: {
       xs: '0.55rem',
@@ -16,38 +24,26 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'poppins' : ['Poppins'],
-        'roboto' : ['Roboto', 'sans-serif'],
-        'machina': ['PP Neue Machina', 'sans-serif'],
+        'poppins' : ['var(--font-poppins)', ...fontFamily.sans],
+        'machina': ['var(--font-machina)', ...fontFamily.sans],
       },
       backgroundImage: {
-        'vetor-one': "url('/assets/images/background.svg')",
+        'vetor-blue': "url('/assets/images/background.png')",
         'vetor-city': "url('/assets/images/vector-city.svg')",
       },
       colors: {
         'muve-principal': '#0550FC',
         'muve-verde': '#00FF96',
         'muve-bluedark': '#212635',
+        'muve-white': '#FFFFFF',
         'bg-gradient-white': '#FFFFFF',
         'bg-gradient-blue': '#DCE0FF',
         border: '#1a2e35',
         background: '#cecece',
       },
       animation: {
-        vote: 'vote 1s ease-in-out',
       },
       keyframes: {
-        vote: {
-          '0%, 100%': {
-            transform: 'rotate(0deg)',
-          },
-          '25%': {
-            transform: 'rotate(-30deg)',
-          },
-          '75%': {
-            transform: 'rotate(30deg)',
-          },
-        },
       },
     },
   },

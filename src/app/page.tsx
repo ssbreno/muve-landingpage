@@ -16,6 +16,10 @@ export const metadata = {
   description: description,
   openGraph: {
     url: `https://muve.delivery/`,
+    title: 'Muve Delivery',
+    locale: 'pt-br',
+    type: 'website',
+    description: description,
     images: [
       {
         url: `https://muve.delivery/api/og`,

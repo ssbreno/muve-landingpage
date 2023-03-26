@@ -27,15 +27,15 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-base font-medium mr-20 "
+              className="text-base mr-20 hover:text-muve-principal"
             >
               <b>{items.name}</b>
             </Link>
           ))}
           <button
             type="submit"
-            className="font-bold text-xs lg:text-sm bg-gradient-to-r  mx-auto 
-            from-muve-principal to-muve-verde py-2 px-12 rounded-full mr-20 text-white-700"
+            className="font-bold text-muve-white lg:text-base mx-auto 
+            bg-muve-principal py-2 px-6 rounded-lg mr-20 hover:brightness-50"
           >
             ENTRAR
           </button>
@@ -73,7 +73,7 @@ export function Navigation() {
               duration={1000}
               key={item.name}
               to={item.href}
-              className="flex flex-col gap-4 items-center text-2xl font-medium"
+              className="flex flex-col gap-4 items-center text-2xl font-medium  hover:text-muve-principal"
             >
               {item.name}
             </Link>

@@ -25,7 +25,10 @@ export default function Head() {
       />
       <Script async src={GA_ADS_ID} crossOrigin="anonymous" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="theme-color" content="#c383fb" />
+      <meta
+        name="keywords"
+        content="delivery, ifood, uber, rappi, motoboy, entregas, food delivery, entrega de comida, muve, move, muuve, inter"
+      />
       <link
         rel="apple-touch-icon"
         sizes="180x180"

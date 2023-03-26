@@ -1,17 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-@font-face {
-  font-family: 'PP Neue Machina';
-  src: url("../../public/fonts/PPNeueMachina-PlainRegular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
 
 :root {
     --pause-on-hover: running;
@@ -23,6 +12,14 @@
     --iteration-count: infinite;
 }
 
+header {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-bg-white {
+  background-color: white;
+}
+
 @keyframes scroll {
     0% {
       transform: translateX(0%);
@@ -32,6 +29,19 @@
       transform: translateX(-100%);
     }
   }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: break-spaces;
+  animation: typing 3s steps(20, end);
+}
 
 .rectangle{
     @apply mr-5;
