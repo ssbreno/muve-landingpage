@@ -43,14 +43,15 @@ header {
   animation: typing 3s steps(20, end);
 }
 
+
 .rectangle{
   @apply mr-5 w-1/6 sm:w-1/6;
+  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
 }
 
 .green-section-text{
-  @apply inline-flex text-base sm:text-2xl font-bold mr-10;
+  @apply inline-flex text-base sm:text-2xl font-bold mr-10 w-full sm:w-full;
 }
-
 
 .marquee {
     flex: 0 0 auto;

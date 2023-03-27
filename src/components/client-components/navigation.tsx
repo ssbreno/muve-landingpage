@@ -53,7 +53,7 @@ export function Navigation() {
       </button>
       <nav
         ref={navigation}
-        className="fixed top-0 right-0 h-screen w-screen p-4 bg-white z-20 lg:hidden translate-x-full transition-all duration-500"
+        className="fixed top-0 right-0 h-full w-full p-4 bg-white z-20 lg:hidden translate-x-full transition-all duration-500"
       >
         <button
           onClick={handleMenu}

@@ -13,7 +13,7 @@ export function Hero() {
       <div className="flex flex-col lg:w-1/2 container">
         <Image
           src={Muve}
-          className="md:w-4/5 sm:mt-20 animate-pulse"
+          className="md:w-4/5 sm:mt-20 animate-pulse mt-20"
           alt="Muve Logo"
           quality={100}
         />
