@@ -27,7 +27,7 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-base mr-20 hover:text-muve-principal"
+              className="text-base mr-20 border-b-2 border-transparent hover:border-blue-500"
             >
               <b>{items.name}</b>
             </Link>
