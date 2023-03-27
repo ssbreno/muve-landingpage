@@ -7,7 +7,7 @@ export function AnimatedGreen() {
       <div className="marquee-container py-10 bg-app-purple flex items-center flex-nowrap overflow-x-hidden">
         <div className="marquee">
           <div className="inline-flex overflow-y-hidden">
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -16,7 +16,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 7.680.000 pedidos entregues pelo iFood
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -25,7 +25,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 10 anos a serviço
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -34,7 +34,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 25.000 entregadores ativos
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -47,7 +47,7 @@ export function AnimatedGreen() {
         </div>
         <div className="marquee">
           <div className="inline-flex overflow-y-hidden">
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -56,7 +56,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 7.680.000 pedidos entregues pelo iFood
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -65,7 +65,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 10 anos a serviço
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}
@@ -74,7 +74,7 @@ export function AnimatedGreen() {
               />{' '}
               Mais de 25.000 entregadores ativos
             </p>
-            <p className="inline-flex text-4xl font-bold mr-10">
+            <p className="green-section-text">
               <Image
                 className="block rectangle"
                 src={Rectangle}

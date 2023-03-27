@@ -35,7 +35,7 @@ export function Navigation() {
           <button
             type="submit"
             className="font-bold text-muve-white lg:text-base mx-auto 
-            bg-muve-principal py-2 px-6 rounded-lg mr-20 hover:brightness-50"
+            bg-muve-principal py-2 px-6 rounded-lg mr-20"
           >
             ENTRAR
           </button>
