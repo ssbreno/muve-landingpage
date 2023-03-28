@@ -16,8 +16,8 @@ export const TypingText: React.FC<TextInterface> = ({ text, className }) => {
   }, [text, typedText]);
 
   return (
-    <div className="self-center ">
-      <p className="text-gray-800 mt-[-8%]">
+    <div className="self-center text-center ">
+      <p className="text-gray-800 text-center mt-[-8%]">
         {typedText.split('').map((letter, i) => (
           <span
             key={i}
