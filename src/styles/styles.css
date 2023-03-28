@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-    --pause-on-hover: running;
-    --pause-on-click: running;
-    --play: running;
-    --direction: normal;
-    --duration: 22.3675s;
-    --delay: 0s;
-    --iteration-count: infinite;
+  --pause-on-hover: running;
+  --pause-on-click: running;
+  --play: running;
+  --direction: normal;
+  --duration: 21.3675s;
+  --delay: 0s;
+  --iteration-count: infinite;
 }
 
 header {
@@ -30,11 +30,6 @@ header {
     }
   }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
 .underline::after{
   content:'';
   position:absolute;
@@ -53,14 +48,6 @@ header {
   
 }
 
-.typing {
-  display: inline-block;
-  overflow: hidden;
-  white-space: break-spaces;
-  animation: typing 3s steps(20, end);
-}
-
-
 .rectangle{
   @apply mr-5 w-1/6 sm:w-1/6;
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
@@ -69,35 +56,28 @@ header {
 .green-section-text{
   @apply inline-flex text-base sm:text-2xl font-bold mr-10 w-full sm:w-full;
 }
+
 .borderB{
   animation: borderB .5s ease;
 }
 
 .marquee {
-    flex: 0 0 auto;
-    min-width: 90%;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
-    animation-play-state: var(--play);
-    animation-delay: var(--delay);
-    animation-direction: var(--direction);
-  }
-  
-  .marquee-container {
-    overflow-x: hidden !important;
-    display: flex !important;
-    flex-direction: row !important;
-    position: relative;
-    width: 100%;
-  }
+  flex: 0 0 auto;
+  min-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
 
-  .reactangle-green {
-    position: absolute;
-    width: 7%;
-    height: 2%;
-    background: #00FF96;
-    border-radius: 58px;
-  }
+.marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: 100%;
+}

@@ -11,15 +11,15 @@ export const config = {
       
     },
     {
+      name: 'Sobre',
+      href: '#',
+    },
+    {
       name: 'Sou empresa',
       href: '#',
     },
     {
       name: 'Sou entregador',
-      href: '#',
-    },
-    {
-      name: 'Sobre',
       href: '#',
     },
     {

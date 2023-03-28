@@ -30,7 +30,7 @@ const machina = localFont({
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
-  weight: ['400','800', '500'],
+  weight: ['400', '800', '500'],
 });
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Muve from '../../public/assets/images/logo-green-svg.svg';
-//    <main className="flex flex-col bg-vetor-blue bg-cover py-36 -mt-20 px-6 lg:px-4 md:justify-center items-center">
+
 const BlueSection = () => {
   return (
     <div

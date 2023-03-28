@@ -43,7 +43,7 @@ export function Navigation() {
       </nav>
 
       <button
-        className="flex lg:hidden items-center justify-center p-1 border border-black mr-10"
+        className="flex lg:hidden items-center justify-center p-1 border border-black"
         onClick={handleMenu}
         role="button"
         title="Botão do menu"
@@ -51,19 +51,22 @@ export function Navigation() {
       >
         <AiOutlineMenu size={20} color="#000" />
       </button>
+
       <nav
         ref={navigation}
-        className="fixed top-0 right-0 h-full w-full p-4 bg-white z-20 lg:hidden translate-x-full transition-all duration-500"
+        className="fixed top-0 right-0 h-screen w-screen p-4 bg-white z-20 lg:hidden translate-x-full transition-all duration-500"
       >
-        <button
-          onClick={handleMenu}
-          className="p-1 items-center justify-center border border-black flex ml-auto mb-10 mr-10"
-          role="button"
-          title="Botão de fechar o menu"
-          aria-label="Botão de fechar o menu"
-        >
-          <AiOutlineClose size={20} color="#000" />
-        </button>
+        <div className=" flex items-end justify-end">
+          <button
+            onClick={handleMenu}
+            className="p-1 border border-black"
+            role="button"
+            title="Botão de fechar o menu"
+            aria-label="Botão de fechar o menu"
+          >
+            <AiOutlineClose size={20} color="#000" />
+          </button>
+        </div>
         <div className="px-2 pt-2 pb-3 space-y-1">
           {nameNavigation.map((item) => (
             <Link
@@ -73,7 +76,7 @@ export function Navigation() {
               duration={1000}
               key={item.name}
               to={item.href}
-              className="flex flex-col gap-4 items-center text-2xl font-medium  hover:text-muve-principal"
+              className="flex flex-col gap-4  items-center justify-center text-2xl font-medium  hover:text-muve-principal"
             >
               {item.name}
             </Link>
@@ -81,7 +84,7 @@ export function Navigation() {
         </div>
         <a
           href="#"
-          className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-200 hover:bg-gray-100`}
+          className={`flex px-5 py-3 text-center items-center justify-center font-medium text-primary bg-gray-200 hover:bg-gray-100`}
         >
           Entrar
         </a>

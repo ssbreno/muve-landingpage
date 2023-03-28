@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <AnimatedSection />
+s
       <BlueSection />
       <DeliveryManSection />
       <DeliverySecond />

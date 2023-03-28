@@ -7,10 +7,12 @@ const Footer = () => {
   return (
     <footer className="bg-muve-bluedark py-40 px-40 lg:px-4">
       <div className="container mx-auto">
-      <div className="flex flex-col lg:flex-row items-center justify-center">
-      <div className="flex-1 lg:flex-none lg:w-1/4 mb-8 lg:mb-0 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
+          <div className="flex-1 lg:flex-none lg:w-1/4 mb-8 lg:mb-0 w-full">
             <div className="text-white">
-              <p className="font-bold text-4xl sm:text-5xl font-poppins-500">Rede Sociais</p>
+              <p className="font-bold text-4xl sm:text-5xl font-poppins-500">
+                Rede Sociais
+              </p>
             </div>
             <div className="flex justify-left">
               <a
@@ -30,35 +32,35 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-center lg:flex-row lg:items-start justify-center mb-4">
-          <div className="flex-1 lg:flex-none mb-8 lg:mb-0">
-            <p className="font-bold text-4xl sm:text-5xl font-poppins-500 text-white">
-              Plataformas
-            </p>
-            <div className="flex justify-center font-poppins-500">
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Link para o Google Play"
-                title="Link para o Google Play"
-              >
-                <button
-                  type="submit"
-                  className="inline-flex items-center font-bold text-black-500 lg:text-2xl bg-muve-verde py-4 px-8 w-full rounded-lg mr-10 hover:brightness-75 mt-10"
+            <div className="flex-1 lg:flex-none mb-8 lg:mb-0">
+              <p className="font-bold text-4xl sm:text-5xl font-poppins-500 text-white">
+                Plataformas
+              </p>
+              <div className="flex justify-center font-poppins-500">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Link para o Google Play"
+                  title="Link para o Google Play"
                 >
-                  <div className="flex-shrink-0 ml-4">
-                    <Image
-                      className="w-1/2 h-auto lg:ml-auto mb-4 lg:mb-0 sm:w-1/2"
-                      src={GooglePlay}
-                      alt="Muve Logo"
-                      quality={100}
-                    />
-                  </div>
-                  <b className="ml-3">Google Play</b>
-                </button>
-              </a>
+                  <button
+                    type="submit"
+                    className="inline-flex items-center font-bold text-black-500 lg:text-2xl bg-muve-verde py-4 px-8 w-full rounded-lg mr-10 hover:brightness-75 mt-10"
+                  >
+                    <div className="flex-shrink-0 ml-4">
+                      <Image
+                        className="w-1/2 h-auto lg:ml-auto mb-4 lg:mb-0 sm:w-1/2"
+                        src={GooglePlay}
+                        alt="Muve Logo"
+                        quality={100}
+                      />
+                    </div>
+                    <b className="ml-3">Google Play</b>
+                  </button>
+                </a>
+              </div>
             </div>
-          </div>
           </div>
         </div>
 
