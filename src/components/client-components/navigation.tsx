@@ -18,7 +18,7 @@ export function Navigation() {
   return (
     <div className="relative font-machina">
       <nav className="hidden lg:block">
-        <div className="flex gap-7 items-center">
+        <div className="flex items-center">
           {nameNavigation.map((items: any) => (
             <Link
               spy={true}
@@ -27,15 +27,15 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-base mr-20 border-b-2 border-transparent hover:border-blue-500"
+              className="text-base mr-20 border-b-2 border-transparent hover:border-blue-500  hover:duration:1000 transition-all ease"
             >
               <b>{items.name}</b>
             </Link>
           ))}
           <button
             type="submit"
-            className="font-bold text-muve-white lg:text-base mx-auto 
-            bg-muve-principal py-2 px-6 rounded-lg mr-20"
+            className="font-bold text-muve-white lg:text-base 
+            bg-muve-principal py-2 px-8 text-center items-center rounded-2xl "
           >
             ENTRAR
           </button>

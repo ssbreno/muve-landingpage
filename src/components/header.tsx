@@ -22,7 +22,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${scroll ? 'bg-white shadow-md' : ''} fixed z-10 container mx-auto py-5 flex flex-wrap justify-between lg:px-4 top-0 left-0 right-0`}>
+    <header
+      className={`${
+        scroll ? 'bg-white shadow-md py-4' : ''
+      } fixed z-10 items-center md:flex-row px-20 w-screen gap-4 py-8 flex flex-wrap md:flex-nowrap justify-between top-0 left-0 right-0`}
+    >
       <Link href="/" passHref={true} title="Home" aria-label="Link para a Home">
         <Image
           className="h-6 lg:h-10"

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Muve from '../../public/assets/images/logo-white.svg';
+import Muve from '../../public/assets/images/logo-green-svg.svg';
 //    <main className="flex flex-col bg-vetor-blue bg-cover py-36 -mt-20 px-6 lg:px-4 md:justify-center items-center">
 const BlueSection = () => {
   return (
@@ -15,8 +15,8 @@ const BlueSection = () => {
           quality={100}
         />
         <div className="w-1/2 my-4">
-          <p className="text-lg ml-4">Texto ao lado da linha</p>
-          <p className="text-lg ml-4">Texto ao lado da linha</p>
+          <p className="text-sm ml-4">Texto ao lado da linha</p>
+          <p className="text-sm ml-4">Texto ao lado da linha</p>
         </div>
         <div className="flex flex-col items-center">
           <p className="font-poppins text-5xl ml-4">Texto ao lado da linha</p>

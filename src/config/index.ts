@@ -1,6 +1,6 @@
 export const config = {
   mainContent:
-    'Vem de MUVE!',
+    'VEM DE MUVE!',
   menuContent:
     'O delivery de Goiânia para Goiânia!',
   titleNotFound: 'Muve | Página não encontrada',
@@ -8,6 +8,7 @@ export const config = {
     {
       name: 'Início',
       href: '#',
+      
     },
     {
       name: 'Sou empresa',
