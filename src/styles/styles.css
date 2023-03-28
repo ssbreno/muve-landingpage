@@ -53,10 +53,6 @@ header {
   clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
 }
 
-.green-section-text{
-  @apply inline-flex text-base sm:text-2xl font-bold mr-10 w-full sm:w-full;
-}
-
 .borderB{
   animation: borderB .5s ease;
 }

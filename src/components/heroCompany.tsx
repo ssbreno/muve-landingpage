@@ -4,7 +4,7 @@ import CompanySVG from '../../public/assets/images/delivery-boy.svg';
 const Company = () => {
   return (
     <div
-      className="flex flex-col bg-vetor-blue bg-cover py-36 -mt-20 px-6 lg:px-4 
+      className="flex flex-col bg-vetor-blue bg-cover py-36 lg:px-4 
     md:justify-center items-center lg:h-screen"
     >
       <div className="flex flex-col lg:w-1/2 container">

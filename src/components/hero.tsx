@@ -5,8 +5,10 @@ import Muve from '../../public/assets/images/logo.svg';
 export function Hero() {
   const { mainContent, menuContent } = config;
   return (
-    <main className="flex overflow-x-hidden flex-col bg-vetor-blue mr-4 bg-cover md:px-6 lg:px-4 
-    md:justify-center items-center lg:h-screen h-screen w-screen ">
+    <main
+      className="flex overflow-x-hidden flex-col bg-vetor-blue bg-cover md:px-6 lg:px-4 
+    md:justify-center items-center lg:h-screen h-screen"
+    >
       <div className="flex flex-col lg:w-1/2 pt-20 container">
         <Image
           src={Muve}

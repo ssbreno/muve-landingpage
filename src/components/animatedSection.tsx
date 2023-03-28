@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function AnimatedSection() {
   return (
     <>
-      <div className="h-36 items-center flex flex-col justify-center bg-gray-50">
+      <div className="items-center flex flex-col justify-center">
         <div className="flex items-center overflow-hidden justify-center font-machina">
           <p className="flex items-center overflow-hidden text-3xl text-muve-principal mr-5">
             <b>Integrações</b>
@@ -17,12 +17,12 @@ export function AnimatedSection() {
             quality={100}
           />
         </div>
-        <div className="flex items-center overflow-hidden mt-10">
-          <div className="marquee-container flex items-center flex-nowrap overflow-x-hidden mt-25">
+        <div className="flex items-center overflow-hidden">
+          <div className="marquee-container flex items-center overflow-x-hidden mb-20">
             <div className="marquee">
-              <div className="inline-flex overflow-y-hidden gap-14 items-center">
+              <div className="sm:flex gap-14">
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/pagar-me.png"
                   alt=""
                   width={140}
@@ -30,7 +30,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex  mr-10"
+                  className="inline-flex "
                   src="/assets/images/partners/banco-inter.png"
                   alt=""
                   width={100}
@@ -38,7 +38,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex  mr-10"
+                  className="inline-flex "
                   src="/assets/images/partners/delivery-direto.png"
                   alt=""
                   width={160}
@@ -46,7 +46,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/neemo.png"
                   alt=""
                   width={100}
@@ -54,7 +54,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/accon.png"
                   alt=""
                   width={100}
@@ -64,9 +64,9 @@ export function AnimatedSection() {
               </div>
             </div>
             <div className="marquee">
-              <div className="inline-flex overflow-y-hidden gap-14 items-center ml-5">
+              <div className="inline-flex overflow-y-hidden gap-14">
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/pagar-me.png"
                   alt=""
                   width={140}
@@ -74,7 +74,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/banco-inter.png"
                   alt=""
                   width={100}
@@ -82,7 +82,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/delivery-direto.png"
                   alt=""
                   width={160}
@@ -90,7 +90,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-10"
+                  className="inline-flex"
                   src="/assets/images/partners/neemo.png"
                   alt=""
                   width={100}
@@ -98,7 +98,7 @@ export function AnimatedSection() {
                   quality={100}
                 />
                 <Image
-                  className="inline-flex mr-35 justify-center"
+                  className="inline-flex"
                   src="/assets/images/partners/accon.png"
                   alt=""
                   width={140}
