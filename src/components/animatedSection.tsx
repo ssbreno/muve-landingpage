@@ -3,13 +3,13 @@ import Image from 'next/image';
 export function AnimatedSection() {
   return (
     <>
-      <div className="h-36 items-center gap-6 flex flex-col justify-center bg-gray-50 mt-25">
+      <div className="h-36 items-center gap-6 flex flex-col justify-center overflow-x-hidden bg-gray-50 mt-25">
         <div className="flex items-center overflow-hidden justify-center font-machina">
           <p className="flex items-center overflow-hidden text-3xl text-muve-principal">
             <b>Integrações</b>
           </p>
           <Image
-            className="flex lg:h-full items-center overflow-hidden ml-5"
+            className="flex lg:h-full items-center overflow-hidden overflow-x-hidden ml-5"
             src="/assets/images/integration.svg"
             alt=""
             width={40}
@@ -64,7 +64,7 @@ export function AnimatedSection() {
               </div>
             </div>
             <div className="marquee">
-              <div className="inline-flex overflow-y-hidden gap-14 items-center">
+              <div className="inline-flex overflow-y-hidden overflow-x-hidden gap-14 items-center">
                 <Image
                   className="flex lg:h-full"
                   src="/assets/images/partners/pagar-me.png"

@@ -7,7 +7,7 @@ export function Hero() {
   const { mainContent, menuContent } = config;
   return (
     <main
-      className="flex overflow-x-hidden flex-col bg-vetor-blue mr-4 bg-cover w-screen md:px-6 lg:px-4 
+      className="flex overflow-x-hidden flex-col bg-vetor-blue mr-4 bg-cover  md:px-6 lg:px-4 
     md:justify-center items-center lg:h-screen "
     >
       <div className="flex flex-col lg:w-1/2 w-1/2 pt-20 container ">
@@ -20,7 +20,7 @@ export function Hero() {
         <p className="text-gray-800 self-center font-machina mt-12 font-bold lg:text-5xl">
           {mainContent}
         </p>
-        <p className="text-gray-800 self-center font-machina font-normal text-base">
+        <p className="text-gray-800 self-center mx-auto font-machina font-normal text-base">
           {menuContent}
         </p>
       </div>
