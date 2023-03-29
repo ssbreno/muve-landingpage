@@ -5,7 +5,7 @@ import { LogoBox } from './logoBox';
 
 const Footer = () => {
   return (
-    <footer className="bg-muve-bluedark py-40 px-40 lg:px-4">
+    <footer id="contato" className="bg-muve-bluedark py-40 px-40 lg:px-4">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="flex-1 lg:flex-none lg:w-1/4 mb-8 lg:mb-0 w-full">

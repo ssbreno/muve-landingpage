@@ -4,6 +4,7 @@ import Muve from '../../public/assets/images/logo-green-svg.svg';
 const BlueSection = () => {
   return (
     <div
+      id="sobre"
       className="flex relative flex-col overflow-x-hidden sm:flex-row
      bg-muve-principal bg-vetor-city bg-cover py-36 h-full font-machina text-muve-white"
     >
@@ -47,13 +48,13 @@ const BlueSection = () => {
           clientes finais com a máxima simplicidade, agilidade, segurança e
           economia.
         </p>
-        <p className="my-4 font-machina text-[1rem] w-[72%] sm:text-base mx-auto  font-semibold">
+        <div className="my-4 font-machina text-[1rem] w-[72%] sm:text-base mx-auto  font-semibold">
           <div className="w-2/2 mt-4 mb-8 flex items-center h-4 ">
             <span className="w-20 h-4 mb-[0.3rem] mr-4 bg-muve-verde rounded-full"></span>
             <p className="text-md sm:text-xl ">Gestão completa de delivery</p>
           </div>
-        </p>
-        <p className="my-4 font-machina text-[1rem] w-[72%] sm:text-base mx-auto">
+        </div>
+        <div className="my-4 font-machina text-[1rem] w-[72%] sm:text-base mx-auto">
           <p>- Prospecção/captação de entregadores</p>
           <p> - Recrutamento, seleção e capacitação de entregadores</p>
           <p> - Apoio técnico e estratégico à abertura de novas praças</p>
@@ -68,7 +69,7 @@ const BlueSection = () => {
           <p> - Inteligência de dados e informações</p>
           <p> - Plataforma administrativa</p>
           <p> - Aplicativo do entregador</p>
-          </p>
+        </div>
       </div>
     </div>
   );

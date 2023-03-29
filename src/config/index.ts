@@ -1,30 +1,27 @@
 export const config = {
-  mainContent:
-    'VEM DE MUVE!',
-  menuContent:
-    'O delivery de Goiânia para Goiânia!',
+  mainContent: 'VEM DE MUVE!',
+  menuContent: 'O delivery de Goiânia para Goiânia!',
   titleNotFound: 'Muve | Página não encontrada',
   nameNavigation: [
     {
       name: 'Início',
-      href: '#',
-      
+      href: 'home',
     },
     {
       name: 'Sobre',
-      href: '#',
-    },
-    {
-      name: 'Sou empresa',
-      href: '#',
+      href: 'sobre',
     },
     {
       name: 'Sou entregador',
-      href: '#',
+      href: 'souentregador',
+    },
+    {
+      name: 'Sou empresa',
+      href: 'souempresa',
     },
     {
       name: 'Contato',
-      href: '#',
+      href: 'contato',
     },
   ],
 };

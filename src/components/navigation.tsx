@@ -32,20 +32,20 @@ export function Navigation() {
               <b>{items.name}</b>
             </Link>
           ))}
-        <a
-          href="https://sistema.muve.delivery"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link para o sistema"
-          title="Link para o sistema"
-        >
-          <button
-            type="submit"
-            className="font-bold text-muve-white lg:text-base 
-            bg-muve-principal py-2 px-8 text-center items-center rounded-2xl "
+          <a
+            href="https://sistema.muve.delivery"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Link para o sistema"
+            title="Link para o sistema"
           >
-            ENTRAR
-          </button>
+            <button
+              type="submit"
+              className="font-bold text-muve-white lg:text-base 
+            bg-muve-principal py-2 px-8 text-center items-center rounded-2xl "
+            >
+              ENTRAR
+            </button>
           </a>
         </div>
       </nav>
@@ -91,7 +91,11 @@ export function Navigation() {
           ))}
         </div>
         <a
-          href="#"
+          href="https://sistema.muve.delivery"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link para o sistema"
+          title="Link para o sistema"
           className={`flex px-5 py-3 text-center items-center justify-center font-medium text-primary bg-gray-200 hover:bg-gray-100`}
         >
           Entrar
