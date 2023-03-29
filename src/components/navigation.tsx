@@ -1,7 +1,7 @@
 'use client';
 import { Link } from 'react-scroll';
 import { useRef } from 'react';
-import { config } from '../../config';
+import { config } from '../config';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export function Navigation() {
@@ -32,6 +32,13 @@ export function Navigation() {
               <b>{items.name}</b>
             </Link>
           ))}
+        <a
+          href="https://sistema.muve.delivery"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link para o sistema"
+          title="Link para o sistema"
+        >
           <button
             type="submit"
             className="font-bold text-muve-white lg:text-base 
@@ -39,6 +46,7 @@ export function Navigation() {
           >
             ENTRAR
           </button>
+          </a>
         </div>
       </nav>
 

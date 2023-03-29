@@ -25,7 +25,7 @@ const BlueSection = () => {
             </div>
           </div>
           <div className="flex flex-col w-full ">
-            <h2 className="font-machina font-black uppercase text-[1.3rem] mx-auto sm:mx-0 sm:text-[2.2rem] text-base">
+            <h2 className="font-machina font-black uppercase mx-auto sm:mx-0 sm:text-[2.2rem] text-base">
               A MUVE é especialista em criar oportunidades de delivery!
             </h2>
             <p className="text-base mx-auto sm:mx-0 w-[80%] mt-5">

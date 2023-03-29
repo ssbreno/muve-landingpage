@@ -1,4 +1,3 @@
-import { AnimatedGreen } from '../components/animatedGreen';
 import { AnimatedSection } from '../components/animatedSection';
 import { Hero } from '../components/hero';
 import BlueSection from '../components/heroBlueSection';
@@ -47,7 +46,6 @@ export default function Page() {
       <Company />
       <CompanySecond />
       <SecondblueSection />
-      <AnimatedGreen />
     </>
   );
 }

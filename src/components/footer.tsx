@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Muve from '../../public/assets/images/logo-white.svg';
 import GooglePlay from '../../public/assets/images/google-play.png';
-import { LogoBox } from './client-components/logoBox';
+import { LogoBox } from './logoBox';
 
 const Footer = () => {
   return (

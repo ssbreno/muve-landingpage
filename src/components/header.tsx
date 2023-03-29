@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { Navigation } from './client-components/navigation';
+import { Navigation } from './navigation';
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
