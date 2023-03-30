@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { Navigation } from './navigation';
+import { Navigation } from './client-components/navigation';
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -23,7 +23,6 @@ const Header = () => {
 
   return (
     <header
-      id="home"
       className={`${
         scroll ? 'bg-white shadow-md py-4' : ''
       } fixed z-10 items-center md:flex-row px-20 w-screen gap-4 py-8 flex flex-wrap md:flex-nowrap justify-between top-0 left-0 right-0`}

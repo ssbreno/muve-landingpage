@@ -4,7 +4,7 @@ export function AnimatedSection() {
   return (
     <>
       <div className="items-center flex flex-col justify-center">
-        <div className="flex items-center overflow-hidden justify-center font-machina">
+        <div className="flex items-center overflow-hidden justify-center font-machina mt-5">
           <p className="flex items-center overflow-hidden text-3xl text-muve-principal mr-5">
             <b>Integrações</b>
           </p>
@@ -18,9 +18,9 @@ export function AnimatedSection() {
           />
         </div>
         <div className="flex items-center overflow-hidden">
-          <div className="marquee-container flex items-center overflow-x-hidden mb-20">
+          <div className="marquee-container flex items-center overflow-x-hidden mb-10">
             <div className="marquee">
-              <div className="sm:flex gap-14">
+              <div className="flex overflow-y-hidden gap-5">
                 <Image
                   className="inline-flex"
                   src="/assets/images/partners/pagar-me.png"
@@ -64,15 +64,7 @@ export function AnimatedSection() {
               </div>
             </div>
             <div className="marquee">
-              <div className="inline-flex overflow-y-hidden gap-14">
-                <Image
-                  className="inline-flex"
-                  src="/assets/images/partners/pagar-me.png"
-                  alt=""
-                  width={140}
-                  height={140}
-                  quality={100}
-                />
+              <div className="overflow-y-hidden gap-14 flex">
                 <Image
                   className="inline-flex"
                   src="/assets/images/partners/banco-inter.png"

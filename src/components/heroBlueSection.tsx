@@ -1,14 +1,13 @@
+'use client';
 import Image from 'next/image';
 import Muve from '../../public/assets/images/logo-green-svg.svg';
+import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 
-const BlueSection = () => {
+function Box() {
   return (
     <div
       id="sobre"
-      className="flex relative flex-col overflow-x-hidden sm:flex-row
-     bg-muve-principal bg-vetor-city bg-cover py-36 h-full font-machina text-muve-white"
-    >
-      <span className="absolute bg-gray-50 rounded-full h-24 w-24 top-[-1.5rem] left-[39.2%] sm:left-[50%]"></span>
+      className="flex relative flex-col overflow-x-hidden sm:flex-row bg-muve-principal bg-vetor-city bg-cover py-36 h-full font-machina text-muve-white">
       <div className="md:w-[50%] flex flex-col mx-[10%] my-auto items-center justify-start">
         <div className="flex justify-center items-center flex-col">
           <div className="items-center justify-center mx-auto w-full">
@@ -72,6 +71,14 @@ const BlueSection = () => {
         </div>
       </div>
     </div>
+  );
+}
+
+const BlueSection = () => {
+  return (
+    <FadeInWhenVisible>
+      <Box />
+    </FadeInWhenVisible>
   );
 };
 

@@ -48,11 +48,6 @@ header {
   
 }
 
-.rectangle{
-  @apply mr-5 w-1/6 sm:w-1/6;
-  clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
-}
-
 .borderB{
   animation: borderB .5s ease;
 }

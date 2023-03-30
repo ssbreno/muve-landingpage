@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import { config } from '../config';
 import Muve from '../../public/assets/images/logo.svg';
+import TypingText from './client-components/typingText';
 
 export function Hero() {
-  const { mainContent, menuContent } = config;
+  const { mainContent } = config;
   return (
     <main
+      id="home"
       className="flex overflow-x-hidden flex-col bg-vetor-blue bg-cover md:px-6 lg:px-4 
     md:justify-center items-center lg:h-screen h-screen"
     >
@@ -19,9 +21,7 @@ export function Hero() {
         <p className="text-gray-800 self-center font-machina mt-12 font-bold lg:text-5xl text-xl ">
           {mainContent}
         </p>
-        <p className="text-gray-800 self-center mx-auto font-machina font-normal text-base">
-          {menuContent}
-        </p>
+        <TypingText />
       </div>
     </main>
   );

@@ -1,7 +1,7 @@
 'use client';
 import { Link } from 'react-scroll';
 import { useRef } from 'react';
-import { config } from '../config';
+import { config } from '../../config';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export function Navigation() {
