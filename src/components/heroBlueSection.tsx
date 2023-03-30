@@ -7,7 +7,8 @@ function Box() {
   return (
     <div
       id="sobre"
-      className="flex relative flex-col overflow-x-hidden sm:flex-row bg-muve-principal bg-vetor-city bg-cover py-36 h-full font-machina text-muve-white">
+      className="flex relative flex-col overflow-x-hidden sm:flex-row bg-muve-principal bg-vetor-city bg-cover py-36 h-full font-machina text-muve-white"
+    >
       <div className="md:w-[50%] flex flex-col mx-[10%] my-auto items-center justify-start">
         <div className="flex justify-center items-center flex-col">
           <div className="items-center justify-center mx-auto w-full">
