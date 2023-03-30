@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-import DeliveryBike from '../../public/assets/images/delivery-bike.svg';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 
 const DeliveryManSection = () => {
@@ -10,14 +8,7 @@ const DeliveryManSection = () => {
         id="souentregador"
         className="flex flex-col sm:flex-row bg-vetor-blue bg-cover py-36 px-15 lg:px-4 h-full"
       >
-        <div className="sm:w-full md:w-1/2 flex flex-col items-center justify-center">
-          <Image
-            className="flex xl:w-90 md:w-[70%] w-[72%] mx-auto sm:mx-0 sm:w-90 mb-12 ml-10"
-            src={DeliveryBike}
-            alt="Muve Logo"
-            quality={100}
-          />
-        </div>
+        <div className="sm:w-full md:w-1/2 flex flex-col items-center justify-center"></div>
         <div className="w-full  sm:mx-0 sm:w-1/2">
           <div className="flex flex-col container mx-auto">
             <div className="flex items-center ml-[8%] sm:ml-0 mb-2">

@@ -6,7 +6,6 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export function Navigation() {
   const navigation = useRef<HTMLDivElement>(null);
-
   const { nameNavigation } = config;
 
   function handleMenu() {
@@ -16,7 +15,7 @@ export function Navigation() {
   }
 
   return (
-    <div className="relative font-machina">
+    <div className="relative font-sans">
       <nav className="hidden lg:block">
         <div className="flex items-center">
           {nameNavigation.map((items: any) => (
@@ -41,7 +40,7 @@ export function Navigation() {
           >
             <button
               type="submit"
-              className="font-bold text-muve-white lg:text-base 
+              className="text-muve-white lg:text-base 
             bg-muve-principal py-2 px-8 text-center items-center rounded-2xl "
             >
               ENTRAR

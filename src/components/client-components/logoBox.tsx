@@ -1,5 +1,4 @@
 'use client';
-
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const logos = {

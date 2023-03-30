@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-import Muve from '../../public/assets/images/logo-green-svg.svg';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 
 function Box() {
@@ -12,12 +10,6 @@ function Box() {
       <div className="md:w-[50%] flex flex-col mx-[10%] my-auto items-center justify-start">
         <div className="flex justify-center items-center flex-col">
           <div className="items-center justify-center mx-auto w-full">
-            <Image
-              className="block w-96 "
-              src={Muve}
-              alt="Muve Logo"
-              quality={100}
-            />
             <div className="w-2/2 mt-4 mb-8 flex items-center h-4 ">
               <span className="w-20 h-4 mb-[0.3rem] mr-4 bg-muve-verde rounded-full"></span>
               <p className="text-base sm:text-xl ">

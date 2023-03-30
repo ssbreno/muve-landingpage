@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -24,8 +23,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'poppins' : ['var(--font-poppins)', ...fontFamily.sans],
-        'machina': ['var(--font-machina)', ...fontFamily.sans],
+        sans: ['Roboto', 'sans-serif'],
+        epilogue: ['Epilogue', 'sans-serif'],
       },
       backgroundImage: {
         'vetor-blue': "url('/assets/images/background.png')",
@@ -34,10 +33,7 @@ module.exports = {
       colors: {
         'muve-principal': '#0550FC',
         'muve-verde': '#00FF96',
-        'muve-bluedark': '#212635',
         'muve-white': '#FFFFFF',
-        'bg-gradient-white': '#FFFFFF',
-        'bg-gradient-blue': '#DCE0FF',
         border: '#1a2e35',
         background: '#cecece',
       },

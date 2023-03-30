@@ -21,7 +21,7 @@ export default async function handler(req: NextRequest) {
     : 'Descrição default';
 
   const hostUrl = checkEnvUrl();
-  const coverBg = `${hostUrl}static/images/logo.svg`;
+  const coverBg = `${hostUrl}assets/images/logo.svg`;
 
   return new ImageResponse(
     (
