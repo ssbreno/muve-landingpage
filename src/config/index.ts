@@ -1,5 +1,4 @@
 export const config = {
-  mainContent: 'Agora, seu produto vai conquistar a cidade!',
   titleNotFound: 'Muve | Página não encontrada',
   nameNavigation: [
     {

@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 export default class TypingText extends Component {
   render() {
     return (
-      <div className="text-muve-white self-center mx-auto font-epilogue font-normal text-base">
+      <div className="text-black-500 self-center font-epilogue font-normal text-base mt-5">
         <Typewriter
           options={{
             strings: [

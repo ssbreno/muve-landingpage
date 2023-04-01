@@ -1,20 +1,53 @@
-import { config } from '../config';
+'use client';
+import Image from 'next/image';
 import TypingText from './client-components/typingText';
+import FadeInWhenVisible from './client-components/fadeInWhenVisible';
+import { motion } from 'framer-motion';
 
 export function Hero() {
-  const { mainContent } = config;
   return (
-    <main
-      id="home"
-      className="flex overflow-x-hidden flex-col bg-muve-principal md:px-6 lg:px-4 
-    md:justify-center items-center lg:h-screen h-screen"
-    >
-      <div className="flex flex-col lg:w-screen w-screen justify-center items-center container">
-        <p className="text-muve-white font-epilogue font-bold lg:text-5xl text-xl ">
-          {mainContent}
-        </p>
-        <TypingText />
+    <div className="main-div">
+      <FadeInWhenVisible>
+        <p className="hero-text text-center">Agora, seu produto</p>
+        <div className="flex items-end">
+          <p className="hero-text">vai conquistar a cidade!</p>
+        </div>
+      </FadeInWhenVisible>
+      <TypingText />
+      <div className="second-div">
+        <div className="div-hero-infos">
+          <Image
+            src="/assets/images/hero_moto.svg"
+            alt=""
+            width={82}
+            height={82}
+            quality={100}
+          />
+          <motion.button
+            className="hero-button"
+            whileHover={{ scale: 1.1, boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)' }}
+            initial={{ scale: 1 }}
+          >
+            Sou entregador
+          </motion.button>
+        </div>
+        <div className="div-hero-infos ml-8">
+          <Image
+            src="/assets/images/hero_company.svg"
+            alt=""
+            width={82}
+            height={82}
+            quality={100}
+          />
+          <motion.button
+            className="hero-button"
+            whileHover={{ scale: 1.1, boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)' }}
+            initial={{ scale: 1 }}
+          >
+            Sou empresa
+          </motion.button>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

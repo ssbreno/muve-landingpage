@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { useRef } from 'react';
 import { config } from '../../config';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 export function Navigation() {
   const navigation = useRef<HTMLDivElement>(null);
@@ -17,7 +18,7 @@ export function Navigation() {
   return (
     <div className="relative font-sans">
       <nav className="hidden lg:block">
-        <div className="flex items-center">
+        <div className="flex items-center font-sans font-normal">
           {nameNavigation.map((items: any) => (
             <Link
               spy={true}
@@ -38,13 +39,16 @@ export function Navigation() {
             aria-label="Link para o sistema"
             title="Link para o sistema"
           >
-            <button
-              type="submit"
-              className="text-muve-white lg:text-base 
-            bg-muve-principal py-2 px-8 text-center items-center rounded-2xl "
+            <motion.button
+              className=" bg-muve-principal text-white py-2 px-11 text-center items-center rounded-2xl"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)',
+              }}
+              initial={{ scale: 1 }}
             >
-              ENTRAR
-            </button>
+              Entrar
+            </motion.button>
           </a>
         </div>
       </nav>

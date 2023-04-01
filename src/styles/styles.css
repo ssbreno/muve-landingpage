@@ -4,6 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "hero.css";
+@import "navigation.css";
+@import "hero-slider.css";
 
 :root {
   --pause-on-hover: running;
@@ -32,28 +35,6 @@ header {
       transform: translateX(-100%);
     }
   }
-
-.underline::after{
-  content:'';
-  position:absolute;
-  width: 100%;
-  height: 0.175rem;
-  background: blue;
-  bottom: 0;
-  left: 0;
-}
-.underline::after{
-  transform: scale(0,1);
-
-}
-.underline:hover::after{
-  transform: scale(1,1);
-  
-}
-
-.borderB{
-  animation: borderB .5s ease;
-}
 
 .marquee {
   flex: 0 0 auto;

@@ -27,8 +27,7 @@ module.exports = {
         epilogue: ['Epilogue', 'sans-serif'],
       },
       backgroundImage: {
-        'vetor-blue': "url('/assets/images/background.png')",
-        'vetor-city': "url('/assets/images/vector-city.svg')",
+        'vetor-hero-mobile': "url('/assets/images/background_slide.svg')",
       },
       colors: {
         'muve-principal': '#0550FC',
@@ -45,4 +44,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  
 };
