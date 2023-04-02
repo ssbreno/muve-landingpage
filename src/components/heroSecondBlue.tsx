@@ -23,13 +23,20 @@ export function HeroSecondBlue() {
             em alta lucratividade a todos os envolvidos!
           </p>
         </div>
-        <motion.div
-          className="hero-blue-second-div"
-          whileHover={{ scale: 1.1 }}
-          initial={{ scale: 1 }}
-        >
-          <Image className="inline-flex" src={MuveAbout} alt="" quality={100} />
-        </motion.div>
+        <div className="hero-white-second-div">
+          <motion.div
+            className="hero-blue-second-div"
+            whileHover={{ scale: 1.1 }}
+            initial={{ scale: 1 }}
+          >
+            <Image
+              className="inline-flex"
+              src={MuveAbout}
+              alt=""
+              quality={100}
+            />
+          </motion.div>
+        </div>
       </div>
     </FadeInWhenVisible>
   );

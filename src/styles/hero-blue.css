@@ -18,6 +18,13 @@
     text-muve-white
 }
 
+.hero-white-second-div {
+    @apply 
+    bg-[#F5F6FF] 
+    w-full 
+    h-screen
+}
+
 .hero-blue-second-div {
     @apply 
     flex 
