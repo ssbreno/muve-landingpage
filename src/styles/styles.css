@@ -7,6 +7,7 @@
 @import "hero.css";
 @import "navigation.css";
 @import "hero-slider.css";
+@import "hero-blue.css";
 
 :root {
   --pause-on-hover: running;

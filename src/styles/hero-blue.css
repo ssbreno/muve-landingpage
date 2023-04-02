@@ -1,7 +1,5 @@
-.hero-container {
+.hero-blue-container {
     @apply 
-    bg-vetor-hero-mobile 
-    bg-cover 
     w-full 
     h-screen 
     sm:grid 
@@ -9,31 +7,40 @@
     font-epilogue
 }
 
-.hero-div {
+.hero-blue-div {
     @apply 
     flex 
     flex-col 
     items-center 
     justify-center 
     px-4 
+    bg-muve-principal
+    text-muve-white
+}
+
+.hero-blue-second-div {
+    @apply 
+    flex 
+    justify-center 
+    items-center 
     mt-20
 }
 
-.hero-second-div {
-    @apply  
-    justify-center 
-    items-center 
-}
-
-.h1 {
+.h1-blue {
     @apply 
-    text-2xl
+    text-lg
+    sm:text-3xl
     font-semibold
+    w-1/2 
+    mt-10
 }
 
-.p {
+.p-blue {
    @apply 
    mt-2 
-   font-normal
+   text-base
+   font-bold
+   w-1/2
+   mb-10
 }
 

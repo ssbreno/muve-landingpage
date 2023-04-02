@@ -1,4 +1,6 @@
 import { Hero } from '../components/hero';
+import Company from '../components/heroCompany';
+import { HeroSecondBlue } from '../components/heroSecondBlue';
 import { HeroSlider } from '../components/heroSlider';
 import { AppConfig } from '../utils/app-config';
 
@@ -34,6 +36,8 @@ export default function Page() {
     <>
       <Hero />
       <HeroSlider />
+      <HeroSecondBlue />
+      <Company />
     </>
   );
 }

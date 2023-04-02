@@ -3,10 +3,11 @@ import Image from 'next/image';
 import TypingText from './client-components/typingText';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export function Hero() {
   return (
-    <div className="main-div">
+    <div id="home" className="main-div">
       <FadeInWhenVisible>
         <p className="hero-text text-center">Agora, seu produto</p>
         <div className="flex items-end">
@@ -23,13 +24,23 @@ export function Hero() {
             height={82}
             quality={100}
           />
-          <motion.button
-            className="hero-button"
-            whileHover={{ scale: 1.1, boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)' }}
-            initial={{ scale: 1 }}
+          <a
+            href="#souentregador"
+            rel="noreferrer"
+            aria-label="Link para Sou Entregador"
+            title="Link para Sou Entregador"
           >
-            Sou entregador
-          </motion.button>
+            <motion.button
+              className="hero-button"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)',
+              }}
+              initial={{ scale: 1 }}
+            >
+              Sou entregador
+            </motion.button>
+          </a>
         </div>
         <div className="div-hero-infos ml-8">
           <Image
@@ -39,13 +50,23 @@ export function Hero() {
             height={82}
             quality={100}
           />
-          <motion.button
-            className="hero-button"
-            whileHover={{ scale: 1.1, boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)' }}
-            initial={{ scale: 1 }}
+          <a
+            href="#souempresa"
+            rel="noreferrer"
+            aria-label="Link para Sou Empresa"
+            title="Link para Sou Empresa"
           >
-            Sou empresa
-          </motion.button>
+            <motion.button
+              className="hero-button"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)',
+              }}
+              initial={{ scale: 1 }}
+            >
+              Sou empresa
+            </motion.button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,19 +1,36 @@
 'use client';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
+import Image from 'next/image';
+import MuveAbout from '../../public/assets/images/muve_about.svg';
+import { motion } from 'framer-motion';
 
-const SecondblueSection = () => {
+export function HeroSecondBlue() {
   return (
     <FadeInWhenVisible>
-      <div
-        className="flex flex-col sm:flex-row
-     bg-muve-principal bg-cover py-36 px-15 lg:px-4 h-30 font-machina text-muve-white"
-      >
-        <div className="flex flex-col lg:flex-row items-center justify-center container mx-auto mb-40">
-          <div className="flex flex-col"></div>
+      <div id="sobre" className="hero-blue-container">
+        <div className="hero-blue-div">
+          <h1 className="h1-blue">
+            A MUVE é especialista em criar oportunidades de delivery!
+          </h1>
+          <p className="p-blue">
+            Ou seja, organizamos a melhor parceria possível entre empresas,
+            entregadores e clientes finais.{' '}
+            <span className="text-muve-verde">
+              Com atendimento realmente humanizado, suporte 24 horas, alta
+              tecnologia
+            </span>{' '}
+            e vasta experiência em logística last mile, transformamos operações
+            em alta lucratividade a todos os envolvidos!
+          </p>
         </div>
+        <motion.div
+          className="hero-blue-second-div"
+          whileHover={{ scale: 1.1 }}
+          initial={{ scale: 1 }}
+        >
+          <Image className="inline-flex" src={MuveAbout} alt="" quality={100} />
+        </motion.div>
       </div>
     </FadeInWhenVisible>
   );
-};
-
-export default SecondblueSection;
+}
