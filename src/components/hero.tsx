@@ -3,7 +3,6 @@ import Image from 'next/image';
 import TypingText from './client-components/typingText';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 export function Hero() {
   return (

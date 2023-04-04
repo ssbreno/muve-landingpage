@@ -9,19 +9,19 @@ export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      title: 'Título do Texto 1',
-      content: 'Conteúdo do Texto 1',
-      image: '/assets/images/hero_company.png',
+      title: 'APP DO ENTREGADOR',
+      content: 'Simples, fácil, ágil e disponível no Google Play',
+      image: '/assets/images/slider/imagem-hero-1.png',
     },
     {
-      title: 'Título do Texto 2',
-      content: 'Conteúdo do Texto 2',
-      image: '/assets/images/hero_moto.png',
+      title: 'AUTOAGENDAMENTO',
+      content: 'O entregador agenda seus turnos com total liberdade',
+      image: '/assets/images/slider/imagem-hero-2.png',
     },
     {
-      title: 'Título do Texto 3',
-      content: 'Conteúdo do Texto 3',
-      image: '/assets/images/logo.svg',
+      title: 'PAGAMENTO DIÁRIO',
+      content: 'Rodou, pediu, recebeu. Dinheiro na mão',
+      image: '/assets/images/slider/imagem-hero-3.png',
     },
   ];
 
@@ -40,16 +40,17 @@ export function HeroSlider() {
           <Fade
             duration={2000}
             onChange={handleSlideChange}
-            prevArrow={undefined}
+            prevArrow={<div></div>}
+            nextArrow={<div></div>}
           >
             {slides.map((slide) => (
-              <div key={slide.image} className="each-fade">
+              <div key={slide.image} className="each-fade mt-20">
                 <Image
                   className="inline-flex"
                   src={slide.image}
                   alt=""
-                  width={140}
-                  height={140}
+                  width={900}
+                  height={900}
                   quality={100}
                 />
               </div>
