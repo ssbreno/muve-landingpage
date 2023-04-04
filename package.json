@@ -24,6 +24,7 @@
     "react-markdown": "^8.0.5",
     "react-scroll": "^1.8.9",
     "react-slideshow-image": "^4.2.1",
+    "react-spring": "^9.7.1",
     "react-visibility-sensor": "^5.1.1",
     "sharp": "^0.31.3",
     "styled-jsx-plugin-postcss": "^4.0.1",

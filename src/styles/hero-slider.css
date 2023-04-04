@@ -21,8 +21,7 @@
 
 .hero-second-div {
     @apply  
-    justify-center 
-    items-center 
+    block justify-center items-center mt-20 lg:mr-20
 }
 
 .h1 {

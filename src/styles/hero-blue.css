@@ -7,7 +7,7 @@
 }
 
 .hero-white-second-div {
-    @apply bg-[#F5F6FF] w-full h-screen
+    @apply bg-[#F5F6FF] w-full h-screen sm:block hidden
 }
 
 .hero-blue-second-div {

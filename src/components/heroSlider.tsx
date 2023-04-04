@@ -36,7 +36,7 @@ export function HeroSlider() {
           <h1 className="h1 text-black-500">{slides[currentSlide].title}</h1>
           <p className="p text-black-500">{slides[currentSlide].content}</p>
         </div>
-        <div className="block justify-center items-center mt-20 lg:mr-20">
+        <div className="hero-second-div">
           <Fade
             duration={2000}
             onChange={handleSlideChange}
@@ -44,7 +44,7 @@ export function HeroSlider() {
             nextArrow={<div></div>}
           >
             {slides.map((slide) => (
-              <div key={slide.image} className="each-fade mt-20">
+              <div key={slide.image} className="each-fade sm:mt-20">
                 <Image
                   className="inline-flex"
                   src={slide.image}
