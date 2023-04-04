@@ -61,7 +61,7 @@ const FeatureList: React.FC<FeatureListProps> = ({
       {transitions((style, item) =>
         item ? (
           <animated.div
-            className="flex items-center gap-4 mt-4"
+            className="flex items-center gap-4 mt-4 z-20"
             key={item}
             style={style}
           >

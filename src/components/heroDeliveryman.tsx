@@ -1,13 +1,18 @@
 'use client';
-import FadeInWhenVisible from './client-components/fadeInWhenVisible';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const DeliveryManSection = () => {
   return (
     <div className="hero-blue-container relative overflow-hidden">
-      <div className=" bg-[#F5F6FF] flex justify-center items-center">
-        <img src="/assets/images/entregador-moto.svg" className="z-10"></img>
+      <div className=" bg-[#F5F6FF] justify-center items-center sm:flex hidden">
+        <Image
+          className="z-10"
+          src="/assets/images/entregador-moto.svg"
+          alt=""
+          width={500}
+          height={500}
+          quality={100}
+        />
       </div>
       <div className="hero-blue-div">
         <h1 className="h1-blue">O que nos move é fazer acontecer!</h1>
@@ -24,7 +29,7 @@ const DeliveryManSection = () => {
       </div>
       <img
         src="/assets/images/background-seta.svg"
-        className="absolute left-[1.rem] w-[100rem] -top-24"
+        className="absolute left-[1.rem] w-[100rem] -top-24 hidden sm:block"
       ></img>
     </div>
   );
