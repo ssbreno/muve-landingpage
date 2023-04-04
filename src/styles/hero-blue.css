@@ -19,5 +19,5 @@
 }
 
 .p-blue {
-    @apply mt-2 text-base font-bold w-1/2 mb-10
+    @apply mt-2 text-base font-normal w-1/2 mb-10
 }
