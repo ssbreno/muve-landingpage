@@ -1,52 +1,59 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js"
+  ],
   theme: {
-    backgroundImage: {
-      hero: "url('https://html.creativegigstf.com/vCamp/vCamp/images/assets/bg_01.png')",
+    fontSize: {
+      xs: '0.55rem',
+      sm: '0.65rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '8rem',
     },
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        epilogue: ['Epilogue', 'sans-serif'],
+      },
+      backgroundImage: {
+        'vetor-hero-mobile': "url('/assets/images/background_slide.svg')",
+      },
+      colors: {
+        'muve-principal': '#0550FC',
+        'muve-verde': '#00FF96',
+        'muve-white': '#FFFFFF',
+        border: '#1a2e35',
+        background: '#cecece',
+      },
       animation: {
-        blob: 'blob 7s infinite',
-        blob2: 'blob2 10s infinite',
+          'mover': 'move 4s linear infinite'
+
+        
       },
       keyframes: {
-        blob: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
-            filter: 'blur(2px)',
+          move: {
+            '0%, 100%': {
+              transform: 'translateX(50)'
+            },
+            '50%':{
+              transform: 'translateX(0)'
+            },
           },
-          '33%': {
-            transform: 'translate(30px, -50px) scale(1.1)',
-            filter: 'blur(0px)',
-          },
-          '66%': {
-            transform: 'translate(-20px, 20px) scale(0.9)',
-            filter: 'blur(2px)',
-          },
-          '100%': {
-            transform: 'tranlate(0px, 0px) scale(1)',
-            filter: 'blur(1px)',
-          },
-        },
-        blob2: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
-            filter: 'blur(2px)',
-          },
-          '50%': {
-            transform: 'translate(20px, -20px) scale(1.1)',
-            filter: 'blur(0px)',
-          },
-          '100%': {
-            transform: 'tranlate(0px, 0px) scale(1)',
-            filter: 'blur(1px)',
-          },
-        },
       },
     },
   },
   variants: {},
   plugins: [],
+  
 };

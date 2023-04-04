@@ -1,0 +1,44 @@
+.hero-text {
+    @apply 
+    text-muve-principal 
+    lg:text-5xl 
+    text-2xl;
+}
+  
+.hero-button {
+    @apply 
+    bg-muve-principal 
+    hover:bg-blue-700 
+    text-white 
+    font-medium 
+    py-2 
+    px-4 
+    mt-4 
+    rounded-2xl
+}
+
+.div-hero-infos {
+    @apply 
+    flex 
+    flex-col 
+    items-center
+}
+
+.main-div {
+    @apply 
+    flex 
+    flex-col 
+    justify-center 
+    items-center 
+    h-screen 
+    font-epilogue 
+    font-semibold
+}
+
+.second-div {
+    @apply 
+    flex 
+    justify-center 
+    mt-8 
+    font-sans
+}
