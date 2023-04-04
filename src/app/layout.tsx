@@ -2,8 +2,7 @@ import '../styles/styles.css';
 import { ReactNode } from 'react';
 import Header from '../components/header';
 import * as gtag from '../lib/gtag';
-import Footer from '../components/sub-footer';
-import FooterReal from '../components/real-footer';
+import FooterReal from './../components/footer';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

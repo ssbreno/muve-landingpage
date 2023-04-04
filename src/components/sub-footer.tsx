@@ -4,7 +4,7 @@ import FadeInWhenVisible from './client-components/fadeInWhenVisible';
 const Footer = () => {
   return (
     <FadeInWhenVisible>
-      <div className="h-screen w-full relative">
+      <div className="h-screen w-full relative sm:block hidden">
         <img
           src="/assets/images/location-svg.svg"
           className="absolute left-[46.7%] w-16 top-64"
