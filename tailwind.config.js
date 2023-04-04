@@ -38,8 +38,6 @@ module.exports = {
       },
       animation: {
           'mover': 'move 4s linear infinite'
-
-        
       },
       keyframes: {
           move: {
