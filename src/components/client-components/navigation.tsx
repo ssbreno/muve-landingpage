@@ -36,8 +36,6 @@ export function Navigation() {
             href="https://sistema.muve.delivery"
             target="_blank"
             rel="noreferrer"
-            aria-label="Link para o sistema"
-            title="Link para o sistema"
           >
             <motion.button
               className=" bg-muve-principal text-white py-2 px-11 text-center items-center rounded-full"
@@ -72,8 +70,6 @@ export function Navigation() {
             onClick={handleMenu}
             className="p-1 border border-black"
             role="button"
-            title="Botão de fechar o menu"
-            aria-label="Botão de fechar o menu"
           >
             <AiOutlineClose size={20} color="#000" />
           </button>

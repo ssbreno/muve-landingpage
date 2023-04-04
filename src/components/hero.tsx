@@ -23,12 +23,7 @@ export function Hero() {
             height={82}
             quality={100}
           />
-          <a
-            href="#souentregador"
-            rel="noreferrer"
-            aria-label="Link para Sou Entregador"
-            title="Link para Sou Entregador"
-          >
+          <a href="#souentregador" rel="noreferrer">
             <motion.button
               className="hero-button"
               whileHover={{
@@ -49,12 +44,7 @@ export function Hero() {
             height={82}
             quality={100}
           />
-          <a
-            href="#souempresa"
-            rel="noreferrer"
-            aria-label="Link para Sou Empresa"
-            title="Link para Sou Empresa"
-          >
+          <a href="#souempresa" rel="noreferrer">
             <motion.button
               className="hero-button"
               whileHover={{

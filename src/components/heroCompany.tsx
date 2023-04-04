@@ -34,8 +34,6 @@ const Company = () => {
               href="https://api.whatsapp.com/send?phone=5562995727321"
               target="_blank"
               rel="noreferrer"
-              aria-label="Link para o WhatsApp"
-              title="Link para o WhatsApp"
             >
               <motion.button
                 className="font-semibold bg-muve-principal px-8 py-4 rounded-full text-gray-50"
