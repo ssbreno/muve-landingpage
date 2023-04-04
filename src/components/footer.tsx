@@ -32,7 +32,7 @@ const FooterReal = () => {
           Sobre
         </a>
         <a
-          href="#contato"
+          href='https://api.whatsapp.com/send?phone=556281489641'
           rel="noreferrer"
           className=" border-b-2 border-transparent hover:border-blue-500  hover:duration:1000 transition-all ease"
         >

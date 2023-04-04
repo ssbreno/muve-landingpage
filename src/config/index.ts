@@ -23,7 +23,7 @@ export const config = {
     },
     {
       name: 'Contato',
-      href: 'contato',
+      href: 'https://api.whatsapp.com/send?phone=556281489641',
     },
   ],
 };
