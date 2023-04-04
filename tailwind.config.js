@@ -37,8 +37,19 @@ module.exports = {
         background: '#cecece',
       },
       animation: {
+          'mover': 'move 4s linear infinite'
+
+        
       },
       keyframes: {
+          move: {
+            '0%, 100%': {
+              transform: 'translateX(50)'
+            },
+            '50%':{
+              transform: 'translateX(0)'
+            },
+          },
       },
     },
   },

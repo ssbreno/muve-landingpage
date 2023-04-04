@@ -2,7 +2,8 @@ import '../styles/styles.css';
 import { ReactNode } from 'react';
 import Header from '../components/header';
 import * as gtag from '../lib/gtag';
-import Footer from '../components/footer';
+import Footer from '../components/sub-footer';
+import FooterReal from '../components/real-footer';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -11,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col">
         <Header />
         {children}
-        <Footer />
+        <FooterReal />
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${gtag.GA_TRACKING_ID}`}

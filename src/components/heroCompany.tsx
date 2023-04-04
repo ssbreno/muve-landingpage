@@ -49,6 +49,7 @@ const Company = () => {
       </div>
       <div className="justify-center flex flex-col px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12">
         <FeatureList
+          className="cursor-pointer"
           title="Tecnologia"
           features={[
             'Rastreamento em tempo real.',
@@ -64,7 +65,7 @@ const Company = () => {
         />
         <FeatureList
           title="Sob demanda"
-          className="mt-10"
+          className="mt-10 cursor-pointer"
           features={[
             'Atendimento e cobrança via entregas;',
             'Maior agilidade nas entregas;',
@@ -73,7 +74,7 @@ const Company = () => {
         />
         <FeatureList
           title="Dedicado"
-          className="mt-10"
+          className="mt-10 cursor-pointer"
           features={[
             'Estabelecimento de equipes;',
             'Treinamento personalizado;',

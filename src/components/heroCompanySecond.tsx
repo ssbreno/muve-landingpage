@@ -49,6 +49,7 @@ const CompanySecond = () => {
       </div>
       <div className="justify-center flex flex-col px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12 mb-20">
         <FeatureList
+          className="cursor-pointer"
           title="Passo a passo"
           features={[
             'Fale conosco',
@@ -60,7 +61,7 @@ const CompanySecond = () => {
         />
         <FeatureList
           title="Nossas vantagens"
-          className="mt-10 z-20"
+          className="mt-10 cursor-pointer z-20"
           features={[
             'Pagamento diário.',
             'Garantido (altas taxas).',

@@ -4,6 +4,7 @@ import HeroAbout from '../components/heroAbout';
 import Company from '../components/heroCompany';
 import CompanySecond from '../components/heroCompanySecond';
 import DeliveryManSection from '../components/heroDeliveryman';
+import Footer from '../components/sub-footer';
 import { HeroSecondBlue } from '../components/heroSecondBlue';
 import { HeroSlider } from '../components/heroSlider';
 import { AppConfig } from '../utils/app-config';
@@ -46,6 +47,7 @@ export default function Page() {
       <DeliveryManSection />
       <HeroAbout />
       <AnimatedSection />
+      <Footer />
     </>
   );
 }
