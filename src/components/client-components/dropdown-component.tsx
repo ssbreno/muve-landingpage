@@ -54,8 +54,26 @@ const FeatureList: React.FC<FeatureListProps> = ({
     <>
       <div className={`justify-between flex-row flex ${className}`}>
         <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="text-muve-principal text-3xl" onClick={handleClick}>
-          {visible ? 'x' : '+'}
+        <p onClick={handleClick}>
+          {visible ? (
+            <Image
+              className="inline-flex"
+              src="assets/images/close.svg"
+              alt=""
+              width={30}
+              height={30}
+              quality={100}
+            />
+          ) : (
+            <Image
+              className="inline-flex"
+              src="assets/images/add.svg"
+              alt=""
+              width={30}
+              height={30}
+              quality={100}
+            />
+          )}
         </p>
       </div>
       {transitions((style, item) =>

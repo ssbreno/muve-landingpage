@@ -11,17 +11,17 @@ export function HeroSlider() {
     {
       title: 'APP DO ENTREGADOR',
       content: 'Simples, fácil, ágil e disponível no Google Play',
-      image: '/assets/images/slider/imagem-hero-1.png',
+      image: '/assets/images/slider/slider_01.png',
     },
     {
       title: 'AUTOAGENDAMENTO',
       content: 'O entregador agenda seus turnos com total liberdade',
-      image: '/assets/images/slider/imagem-hero-2.png',
+      image: '/assets/images/slider/slider_02.png',
     },
     {
       title: 'PAGAMENTO DIÁRIO',
       content: 'Rodou, pediu, recebeu. Dinheiro na mão',
-      image: '/assets/images/slider/imagem-hero-3.png',
+      image: '/assets/images/slider/slider_01.png',
     },
   ];
 

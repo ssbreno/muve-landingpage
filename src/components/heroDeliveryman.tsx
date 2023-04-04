@@ -31,7 +31,7 @@ const DeliveryManSection = () => {
         </div>
         <img
           src="/assets/images/background-seta.svg"
-          className="absolute w-[100rem] -top-24 hidden sm:block"
+          className="absolute w-[120rem] -top-24 hidden sm:block"
         ></img>
       </div>
     </FadeInWhenVisible>

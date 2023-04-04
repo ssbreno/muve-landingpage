@@ -16,9 +16,9 @@ export function Navigation() {
   }
 
   return (
-    <div className="relative font-sans">
+    <div className="relative font-sans font-normal">
       <nav className="hidden lg:block">
-        <div className="flex items-center font-sans font-normal">
+        <div className="flex items-center">
           {nameNavigation.map((items: any) => (
             <Link
               spy={true}
@@ -27,7 +27,7 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-base mr-20 border-b-2 border-transparent hover:border-blue-500  hover:duration:1000 transition-all ease"
+              className="text-base mr-20 cursor-pointer hover:text-muve-principal hover:font-semibold"
             >
               <b>{items.name}</b>
             </Link>
@@ -40,7 +40,7 @@ export function Navigation() {
             title="Link para o sistema"
           >
             <motion.button
-              className=" bg-muve-principal text-white py-2 px-11 text-center items-center rounded-2xl"
+              className=" bg-muve-principal text-white py-2 px-11 text-center items-center rounded-full"
               whileHover={{
                 scale: 1.1,
                 boxShadow: '0 0 8px rgba(0, 0, 0, 0.3)',
@@ -87,7 +87,7 @@ export function Navigation() {
               duration={1000}
               key={item.name}
               to={item.href}
-              className="flex flex-col gap-4  items-center justify-center text-2xl font-medium  hover:text-muve-principal"
+              className="flex flex-col gap-4  items-center justify-center text-2xl font-medium hover:text-muve-principal hover:font-semibold"
             >
               {item.name}
             </Link>

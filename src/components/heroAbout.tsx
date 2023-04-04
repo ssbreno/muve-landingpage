@@ -79,16 +79,22 @@ const HeroAbout = () => {
               <span
                 className={`${
                   selectedItem === item
-                    ? ' bg-muve-verde px-[0.9rem] h-[0.2rem] rounded-full '
+                    ? ' bg-muve-verde px-[0.9rem] h-[0.2rem] rounded-full'
                     : ''
                 }`}
               ></span>
-              <p>{item.title}</p>
+              <p
+                className={`${
+                  selectedItem === item ? ' text-muve-principal font-bold' : ''
+                }`}
+              >
+                {item.title}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
-      <div className="justify-center flex flex-col gap-4 px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12">
+      <div className="justify-center flex flex-col gap-4 px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12 mb-10">
         {selectedItem.info.map((text, index) => (
           <div key={index} className="flex gap-4 items-center">
             <img src="/assets/images/icon-correct.svg"></img>

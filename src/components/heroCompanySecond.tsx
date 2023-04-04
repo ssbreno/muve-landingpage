@@ -74,7 +74,7 @@ const CompanySecond = () => {
           />
         </div>
         <Image
-          className="absolute right-0 w-[100rem] bottom-0 sm:block hidden"
+          className="absolute right-0 w-[140rem] bottom-0 sm:block hidden"
           src="/assets/images/background-seta-top.svg"
           alt=""
           width={80}
