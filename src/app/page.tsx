@@ -1,4 +1,6 @@
+import { AnimatedSection } from '../components/animatedSection';
 import { Hero } from '../components/hero';
+import HeroAbout from '../components/heroAbout';
 import Company from '../components/heroCompany';
 import CompanySecond from '../components/heroCompanySecond';
 import DeliveryManSection from '../components/heroDeliveryman';
@@ -42,6 +44,8 @@ export default function Page() {
       <Company />
       <CompanySecond />
       <DeliveryManSection />
+      <HeroAbout />
+      <AnimatedSection />
     </>
   );
 }
