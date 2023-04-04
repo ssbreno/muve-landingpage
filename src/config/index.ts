@@ -18,6 +18,10 @@ export const config = {
       href: 'souempresa',
     },
     {
+      name: 'Sou entregador',
+      href: 'souentregador',
+    },
+    {
       name: 'Contato',
       href: 'contato',
     },
