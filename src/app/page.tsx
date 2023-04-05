@@ -22,13 +22,13 @@ export const metadata = {
     description: description,
     images: [
       {
-        url: `https://muve.delivery/api/og`,
+        url: `https://ibb.co/dG2m2Jq`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: `https://muve.delivery/api/og`,
+    images: `https://ibb.co/dG2m2Jq`,
     title: site_name,
     description: description,
     creator: '@muve.go',
