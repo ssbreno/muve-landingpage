@@ -78,10 +78,13 @@ const FooterReal = () => {
           Termos e Condições de Uso
         </a>
       </div>
-      <div className="flex flex-col mt-12 justify-center font-epilogue text-sm items-center">
-        <p>Desenvolvido por</p>
-        <img src="/assets/images/logo-bs.svg" className="w-16"></img>
-      </div>
+
+      <a href="https://brenosobral.com.br" target="_blank" rel="noreferrer">
+        <div className="flex flex-col mt-12 justify-center font-epilogue text-sm items-center">
+          <p>Desenvolvido por</p>
+          <img src="/assets/images/logo-bs.svg" className="w-16"></img>
+        </div>
+      </a>
     </div>
   );
 };
