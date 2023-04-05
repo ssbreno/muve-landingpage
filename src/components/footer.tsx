@@ -32,7 +32,7 @@ const FooterReal = () => {
           Sobre
         </a>
         <a
-          href='https://api.whatsapp.com/send?phone=556281489641'
+          href="https://api.whatsapp.com/send?phone=556281489641"
           rel="noreferrer"
           className=" border-b-2 border-transparent hover:border-blue-500  hover:duration:1000 transition-all ease"
         >
@@ -77,6 +77,10 @@ const FooterReal = () => {
         >
           Termos e Condições de Uso
         </a>
+      </div>
+      <div className="flex flex-col mt-12 justify-center font-epilogue text-sm items-center">
+        <p>Desenvolvido por</p>
+        <img src="/assets/images/logo-bs.svg" className="w-16"></img>
       </div>
     </div>
   );

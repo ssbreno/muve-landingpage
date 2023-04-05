@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="h-screen w-full relative sm:block hidden">
         <img
           src="/assets/images/location-svg.svg"
-          className="absolute left-[47.1%] w-16 top-64"
+          className="absolute left-[46.8%] w-16 top-64"
         ></img>
         <img
           src="/assets/images/background-footer.svg"
