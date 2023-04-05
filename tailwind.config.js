@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         'vetor-hero-mobile': "url('/assets/images/background_slide.svg')",
+        'word-m': "url('/assets/images/word-M.svg')",
       },
       colors: {
         'muve-principal': '#0550FC',

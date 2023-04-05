@@ -3,7 +3,7 @@
 }
 
 .hero-blue-div {
-    @apply flex flex-col items-center justify-center px-4 bg-muve-principal text-muve-white
+    @apply flex flex-col items-center justify-center px-4 bg-muve-principal bg-word-m bg-cover text-muve-white
 }
 
 .hero-white-second-div {
