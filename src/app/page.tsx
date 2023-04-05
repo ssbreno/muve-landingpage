@@ -22,19 +22,20 @@ export const metadata = {
     description: description,
     images: [
       {
-        url: `https://ibb.co/dG2m2Jq`,
+        url: `https://muve.delivery/assets/images/og.png`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: `https://ibb.co/dG2m2Jq`,
+    images: `https://muve.delivery/assets/images/og.png`,
     title: site_name,
     description: description,
     creator: '@muve.go',
     site: 'https://muve.delivery',
   },
 };
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
 export default function Page() {
   return (
