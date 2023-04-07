@@ -2,7 +2,11 @@ const FooterReal = () => {
   return (
     <div className="h-3/5 w-full flex font-epilogue justify-center gap-12 flex-col items-center mt-28 py-12">
       <img src="/assets/images/logo.svg" className="w-36"></img>
-      <a href="#" target="_blank" rel="noreferrer">
+      <a
+        href="https://play.google.com/store/apps/details?id=br.com.levoapp.muvedelivery"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="flex flex-col mt-12 justify-center items-center">
           <img src="/assets/images/playstorex2.png" className="w-40"></img>
         </div>

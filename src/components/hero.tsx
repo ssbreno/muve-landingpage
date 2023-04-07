@@ -8,9 +8,9 @@ export function Hero() {
   return (
     <div id="home" className="main-div">
       <FadeInWhenVisible>
-        <p className="hero-text text-center">Agora, seu produto</p>
+        <p className="hero-text text-center">A gente faz</p>
         <div className="flex items-end">
-          <p className="hero-text">vai conquistar a cidade!</p>
+          <p className="hero-text">seu delivery acontecer!</p>
         </div>
       </FadeInWhenVisible>
       <TypingText />
