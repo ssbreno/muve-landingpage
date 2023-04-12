@@ -9,18 +9,14 @@ export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      title: 'APP DO ENTREGADOR',
-      content: 'Simples, fácil, ágil e disponível no Google Play',
-      image: '/assets/images/slider/slider_01.png',
-    },
-    {
-      title: 'AUTOAGENDAMENTO',
-      content: 'O entregador agenda seus turnos com total liberdade',
+      title: 'ENTREGADOR',
+      content:
+        'Visualize seus pedidos e solicite pagamento diário, na palma da mão.',
       image: '/assets/images/slider/slider_02.png',
     },
     {
-      title: 'PAGAMENTO DIÁRIO',
-      content: 'Rodou, pediu, recebeu. Dinheiro na mão',
+      title: 'EMPRESÁRIO',
+      content: 'Organize e acompanhe suas entregas em tempo real.',
       image: '/assets/images/slider/slider_01.png',
     },
   ];

@@ -1,6 +1,6 @@
 'use client';
 import { Link } from 'react-scroll';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { config } from '../../config';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { motion } from 'framer-motion';
@@ -83,6 +83,7 @@ export function Navigation() {
               duration={1000}
               key={item.name}
               to={item.href}
+              onClick={handleMenu}
               className="flex flex-col gap-4  items-center justify-center text-2xl font-medium hover:text-muve-principal hover:font-semibold"
             >
               {item.name}
