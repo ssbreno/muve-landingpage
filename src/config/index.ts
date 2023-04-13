@@ -18,10 +18,6 @@ export const config = {
       href: 'souempresa',
     },
     {
-      name: 'Sou entregador',
-      href: 'souentregador',
-    },
-    {
       name: 'Contato',
       href: 'https://api.whatsapp.com/send?phone=556281489641',
     },
