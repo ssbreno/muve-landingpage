@@ -3,8 +3,18 @@ import Image from 'next/image';
 import FeatureList from './client-components/dropdown-component';
 import { motion } from 'framer-motion';
 import FadeInWhenVisible from './client-components/fadeInWhenVisible';
+import { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const CompanySecond = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    setIsVisible(inView);
+  }, [inView]);
   return (
     <FadeInWhenVisible>
       <div
@@ -71,14 +81,24 @@ const CompanySecond = () => {
             ]}
           />
         </div>
-        <Image
-          className="absolute right-0 w-[140rem] bottom-0 sm:block hidden"
-          src="/assets/images/background-seta-top.svg"
-          alt=""
-          width={80}
-          height={80}
-          quality={100}
-        />
+        <div ref={ref}>
+          {/* <Image
+            className="arrow mb-60 sm:block hidden"
+            src="/assets/images/animation/arrow_blue_2.svg"
+            alt=""
+            width={24}
+            height={24}
+            quality={100}
+          /> */}
+          <Image
+            className="absolute z-0 right-0 w-2/3 bottom-0 sm:block hidden"
+            src="/assets/images/animation/line.svg"
+            alt=""
+            width={80}
+            height={80}
+            quality={100}
+          />
+        </div>
       </div>
     </FadeInWhenVisible>
   );

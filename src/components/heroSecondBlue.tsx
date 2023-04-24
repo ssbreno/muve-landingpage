@@ -37,12 +37,7 @@ export function HeroSecondBlue() {
           whileHover={{ scale: 1.1 }}
           initial={{ scale: 1 }}
         >
-          <Image
-            className="inline-flex mt-40"
-            src={MuveAbout}
-            alt=""
-            quality={100}
-          />
+          <Image className="inline-flex" src={MuveAbout} alt="" quality={100} />
         </motion.div>
       </motion.div>
     </div>

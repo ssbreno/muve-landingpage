@@ -40,13 +40,13 @@ export function HeroSlider() {
             nextArrow={<div></div>}
           >
             {slides.map((slide) => (
-              <div key={slide.image} className="each-fade sm:mt-20">
+              <div key={slide.image} className="each-fade">
                 <Image
                   className="inline-flex"
                   src={slide.image}
                   alt=""
-                  width={900}
-                  height={900}
+                  width={800}
+                  height={800}
                   quality={100}
                 />
               </div>

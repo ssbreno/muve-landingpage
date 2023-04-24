@@ -7,15 +7,18 @@ const Footer = () => {
       <div className="h-screen w-full relative sm:block hidden">
         <img
           src="/assets/images/location-svg.svg"
-          className="absolute left-[46.8%] w-16 top-64"
-        ></img>
+          className="absolute left-[48.8%] transform -translate-x-1/2 w-16 top-64"
+          alt=""
+        />
         <img
           src="/assets/images/background-footer.svg"
-          className="w-full"
-        ></img>
+          className="w-full h-full object-cover"
+          alt=""
+        />
       </div>
     </FadeInWhenVisible>
   );
 };
+
 
 export default Footer;

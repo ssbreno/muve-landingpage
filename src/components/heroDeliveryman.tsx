@@ -29,10 +29,14 @@ const DeliveryManSection = () => {
             máxima simplicidade, agilidade, segurança e economia.
           </p>
         </div>
-        <img
-          src="/assets/images/background-seta.svg"
-          className="absolute w-[120rem] -top-24 hidden sm:block"
-        ></img>
+        <Image
+          className="absolute right-0 w-2/3 bottom-0 sm:block hidden"
+          src="/assets/images/animation/line_2.svg"
+          alt=""
+          width={80}
+          height={80}
+          quality={100}
+        />
       </div>
     </FadeInWhenVisible>
   );

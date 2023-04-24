@@ -16,12 +16,11 @@
     items-center 
     justify-center 
     px-4 
-    mt-20
 }
 
 .hero-second-div {
     @apply  
-    block justify-center items-center mt-20 lg:mr-20
+    block justify-center items-center lg:mr-20
 }
 
 .h1 {
@@ -32,7 +31,6 @@
 
 .p {
    @apply 
-   mt-2 
    font-normal
 }
 
