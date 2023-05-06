@@ -15,7 +15,7 @@ export function HeroSecondBlue() {
         <h1 className="h1-blue">
           A MUVE é especialista em criar oportunidades de delivery!
         </h1>
-        <p className="p-blue">
+        <p className="p-blue mb-10">
           Ou seja, organizamos a melhor parceria possível entre empresas,
           entregadores e clientes finais.{' '}
           <span className="text-muve-verde">

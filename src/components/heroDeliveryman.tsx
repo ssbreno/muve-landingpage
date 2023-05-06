@@ -17,16 +17,18 @@ const DeliveryManSection = () => {
           />
         </div>
         <div className="hero-blue-div">
-          <h1 className="h1-blue">O que nos move é fazer acontecer!</h1>
+          <h1 className="text-lg sm:text-4xl font-semibold w-1/2 mt-10">
+            O que nos move é fazer acontecer!
+          </h1>
           <p className="p-blue">
             A MUVE é uma empresa de tecnologia e gestão operacional para
-            logística last mile e delivery de entregas rápidas.{' '}
-            <span className="text-muve-verde">
-              Especializada em same day delivery, desenvolve e executa
-              estratégicas de transporte leve sobre duas e quatro rodas{' '}
-            </span>{' '}
-            de forma a conectar negócios, entregadores e clientes finais com a
-            máxima simplicidade, agilidade, segurança e economia.
+            logística last mile e delivery de entregas rápidas.
+          </p>
+          <p className="p-blue mb-10">
+            Especializada em same day delivery, desenvolve e executa
+            estratégicas de transporte leve sobre duas e quatro rodas de forma a
+            conectar negócios, entregadores e clientes finais com a máxima
+            simplicidade, agilidade, segurança e economia.
           </p>
         </div>
         <Image

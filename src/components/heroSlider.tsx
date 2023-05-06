@@ -9,14 +9,15 @@ export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      title: 'ENTREGADOR',
+      title: 'Entregador, rode com aplicativo de suporte',
       content:
-        'Visualize seus pedidos e solicite pagamento diário, na palma da mão.',
+        'Simplifique seu trabalho com acompanhamento no seu celular, na palma da mão. Veja saldo, pedidos, mapa, status e fale com seu supervisor na hora.',
       image: '/assets/images/slider/slider_02.png',
     },
     {
-      title: 'EMPRESÁRIO',
-      content: 'Organize e acompanhe suas entregas em tempo real.',
+      title: 'Empresário, tenha o controle total do seu delivery',
+      content:
+        'Com a nossa plataforma virtual, você acompanha em tempo real a operação da sua frota. Visualize entregadores, destinos, status de pedidos.',
       image: '/assets/images/slider/slider_01.png',
     },
   ];

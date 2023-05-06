@@ -27,7 +27,7 @@ export function Navigation() {
               duration={1000}
               to={items.href}
               key={items.name}
-              className="text-base mr-20 cursor-pointer hover:text-muve-principal hover:font-semibold"
+              className="text-lg mr-20 cursor-pointer hover:text-muve-principal hover:font-semibold"
             >
               <b>{items.name}</b>
             </Link>

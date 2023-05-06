@@ -11,7 +11,7 @@
 }
 
 .hero-blue-second-div {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center w-full h-screen 
 }
 
 .h1-blue {
@@ -19,5 +19,5 @@
 }
 
 .p-blue {
-    @apply mt-2 text-base font-normal w-1/2 mb-10
+    @apply mt-2 text-base font-normal w-1/2
 }
