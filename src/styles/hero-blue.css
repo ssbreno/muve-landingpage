@@ -15,9 +15,9 @@
 }
 
 .h1-blue {
-    @apply text-lg sm:text-3xl font-semibold w-1/2 mt-10
+    @apply text-lg font-semibold w-1/2 mt-10
 }
 
 .p-blue {
-    @apply mt-2 text-base font-normal w-1/2
+    @apply mt-2 text-lg font-normal w-1/2
 }

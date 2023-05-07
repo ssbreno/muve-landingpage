@@ -12,12 +12,14 @@ export function HeroSecondBlue() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <h1 className="h1-blue">
+        <h1 className="h1-blue sm:text-4xl">
           A MUVE é especialista em criar oportunidades de delivery!
         </h1>
-        <p className="p-blue mb-10">
+        <p className="p-blue">
           Ou seja, organizamos a melhor parceria possível entre empresas,
-          entregadores e clientes finais.{' '}
+          entregadores e clientes finais.
+        </p>
+        <p className="p-blue mb-10">
           <span className="text-muve-verde">
             Com atendimento realmente humanizado, suporte 24 horas, alta
             tecnologia

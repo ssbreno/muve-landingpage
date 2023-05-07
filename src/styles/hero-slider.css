@@ -27,10 +27,12 @@
     @apply 
     text-2xl
     font-semibold
+    w-1/2
 }
 
 .p {
    @apply 
    font-normal
+   w-1/2
 }
 
