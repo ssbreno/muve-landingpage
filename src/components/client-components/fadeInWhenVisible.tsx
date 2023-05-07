@@ -1,17 +1,17 @@
-`use client`;
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export default function FadeInWhenVisible({ children }: any) {
+  const [inViewRef, inView] = useInView({
+    threshold: 0.2,
+  });
+
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 1.0 }}
-      variants={{
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 },
-      }}
+      ref={inViewRef}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+      transition={{ duration: 1.5 }}
     >
       {children}
     </motion.div>
