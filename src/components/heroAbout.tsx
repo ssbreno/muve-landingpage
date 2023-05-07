@@ -63,7 +63,7 @@ const HeroAbout = () => {
 
   return (
     <FadeInWhenVisible>
-      <div className="grid sm:grid-cols-2 sm:h-screen mt-[4rem] sm:mt-0 w-full font-epilogue">
+      <div className="grid sm:grid-cols-2 sm:h-screen mt-[4rem] sm:mt-0 w-full h-screen font-epilogue">
         <div className="bg-gray-0 px-4 flex flex-col justify-center text-gray-1000">
           <div className="sm:w-4/6 justify-center mx-auto gap-8">
             <h2 className="text-4xl font-semibold leading-9 mb-10">
