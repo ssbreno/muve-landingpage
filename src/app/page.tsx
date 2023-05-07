@@ -41,7 +41,9 @@ export default function Page() {
     <>
       <Hero />
       <HeroSlider />
-      <HeroSecondBlue />
+      <div className="flex flex-col items-center">
+        <HeroSecondBlue />
+      </div>
       <Company />
       <CompanySecond />
       <DeliveryManSection />

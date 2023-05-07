@@ -2,20 +2,15 @@
 import Image from 'next/image';
 import MuveAbout from '../../public/assets/images/muve_about.svg';
 import { motion } from 'framer-motion';
-import { InView, useInView } from 'react-intersection-observer';
 
 export function HeroSecondBlue() {
-  const [inViewRef, inView] = useInView({
-    threshold: 0.1,
-  });
-
   return (
-    <div id="sobre" className="hero-blue-container" ref={inViewRef}>
+    <div id="sobre" className="hero-blue-container">
       <motion.div
         className="hero-blue-div"
         initial={{ x: '-100%', opacity: 0 }}
-        animate={inView ? { x: 0, opacity: 1 } : { x: '-100%', opacity: 0 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <h1 className="h1-blue sm:text-4xl">
           A MUVE é especialista em criar oportunidades de delivery!
@@ -36,8 +31,8 @@ export function HeroSecondBlue() {
       <motion.div
         className="hero-white-second-div"
         initial={{ x: '100%', opacity: 0 }}
-        animate={inView ? { x: 0, opacity: 1 } : { x: '100%', opacity: 0 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <motion.div
           className="hero-blue-second-div"
