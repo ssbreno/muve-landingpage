@@ -39,15 +39,15 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Hero />
-      <HeroSlider />
-      <HeroSecondBlue />
-      <Company />
-      <CompanySecond />
-      <DeliveryManSection />
-      <HeroAbout />
-      <AnimatedSection />
-      <Footer />
+        <Hero />
+        <HeroSlider />
+        <HeroSecondBlue />
+        <Company />
+        <CompanySecond />
+        <DeliveryManSection />
+        <HeroAbout />
+        <AnimatedSection />
+        <Footer />
     </>
   );
 }
