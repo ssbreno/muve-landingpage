@@ -11,7 +11,7 @@ export default function FadeInWhenVisible({ children }: any) {
       ref={inViewRef}
       initial={{ opacity: 0, scale: 0 }}
       animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1.2 }}
     >
       {children}
     </motion.div>
