@@ -62,52 +62,48 @@ const HeroAbout = () => {
   };
 
   return (
-    <FadeInWhenVisible>
-      <div className="grid sm:grid-cols-2 sm:h-screen mt-[4rem] sm:mt-0 w-full h-screen font-epilogue">
-        <div className="bg-gray-0 px-4 flex flex-col justify-center text-gray-1000">
-          <div className="sm:w-4/6 justify-center mx-auto gap-8">
-            <h2 className="text-4xl font-semibold leading-9 mb-10">
-              Gestão completa de delivery
-            </h2>
-            {data.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="mb-[1.5rem] flex items-center gap-2 hover:text-muve-principal hover:font-semibold hover:cursor-pointer"
-                onClick={() => handleItemClick(item)}
+    <div className="grid sm:grid-cols-2 sm:h-screen mt-[4rem] sm:mt-0 sm:w-full font-epilogue">
+      <div className="bg-gray-0 px-4 flex flex-col justify-center text-gray-1000">
+        <div className="sm:w-4/6 justify-center mx-auto gap-8">
+          <h2 className="text-4xl font-semibold leading-9 mb-10">
+            Gestão completa de delivery
+          </h2>
+          {data.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="mb-[1.5rem] flex items-center gap-2 hover:text-muve-principal hover:font-semibold hover:cursor-pointer"
+              onClick={() => handleItemClick(item)}
+            >
+              <span
+                className={`${
+                  selectedItem === item
+                    ? ' bg-muve-verde px-[0.9rem] h-[0.2rem] rounded-full'
+                    : ''
+                }`}
+              ></span>
+              <p
+                className={`${
+                  selectedItem === item ? ' text-muve-principal font-bold' : ''
+                }`}
               >
-                <span
-                  className={`${
-                    selectedItem === item
-                      ? ' bg-muve-verde px-[0.9rem] h-[0.2rem] rounded-full'
-                      : ''
-                  }`}
-                ></span>
-                <p
-                  className={`${
-                    selectedItem === item
-                      ? ' text-muve-principal font-bold'
-                      : ''
-                  }`}
-                >
-                  {item.title}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        <div className="justify-center flex flex-col gap-4 px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12 mb-10">
-          {selectedItem.info.map((text, index) => (
-            <div key={index} className="flex gap-4 items-center">
-              <img src="/assets/images/icon-correct.svg"></img>
-              <p className="text-[0.8rem]">{text}</p>
-            </div>
+                {item.title}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
-    </FadeInWhenVisible>
+      <div className="justify-center flex flex-col gap-4 px-4 sm:px-0 mt-16 sm:mt-0 sm:pr-12 mb-10">
+        {selectedItem.info.map((text, index) => (
+          <div key={index} className="flex gap-4 items-center">
+            <img src="/assets/images/icon-correct.svg"></img>
+            <p className="text-[0.8rem]">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
